@@ -1,0 +1,21 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header, nav, .content, footer {
+	min-width: 800px;
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+ul.menu {
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu li {
+	list-style-type: none;
+	display: inline-block;
+}

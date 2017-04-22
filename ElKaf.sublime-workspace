@@ -1,0 +1,865 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"SSL-сер",
+				"SSL-сертификаты"
+			],
+			[
+				"испо",
+				"используется"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"stl",
+				"style\tAttr"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"w",
+				"width\tAttr"
+			],
+			[
+				"mai",
+				"mail"
+			],
+			[
+				"scr",
+				"scripts"
+			],
+			[
+				"key",
+				"keywords"
+			],
+			[
+				"req",
+				"req\trequire …"
+			],
+			[
+				"be",
+				"begin\tbegin … rescue … end"
+			],
+			[
+				"sub",
+				"subview_template"
+			],
+			[
+				"preg_mat",
+				"preg_match_all"
+			],
+			[
+				"task",
+				"task_time"
+			],
+			[
+				"work",
+				"work_hours"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"wok",
+				"workday_end"
+			],
+			[
+				"toda",
+				"today_begin"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"tr",
+				"try\tWrap in try { … } catch (…) { … }"
+			],
+			[
+				"curr",
+				"current_time"
+			],
+			[
+				"da",
+				"day"
+			],
+			[
+				"is_nu",
+				"is_numeric"
+			],
+			[
+				"Calc",
+				"CalcException"
+			],
+			[
+				"base",
+				"base64_decode"
+			],
+			[
+				"base64",
+				"base64_decode"
+			],
+			[
+				"lo",
+				"LOG"
+			],
+			[
+				"exi",
+				"eximlog_file"
+			],
+			[
+				"py",
+				"pubkey"
+			],
+			[
+				"err",
+				"error_message"
+			],
+			[
+				"cool",
+				"collection"
+			],
+			[
+				"bre",
+				"breadcrumb_collection"
+			],
+			[
+				"Bre",
+				"breadcrumb"
+			],
+			[
+				"sort",
+				"sort_options"
+			],
+			[
+				"Op",
+				"Option"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"se",
+				"search_form"
+			],
+			[
+				"blo",
+				"block2str"
+			],
+			[
+				"top",
+				"top_menu_view"
+			],
+			[
+				"top_menu",
+				"top_menu_view"
+			],
+			[
+				"sec",
+				"section_name"
+			],
+			[
+				"acti",
+				"active"
+			],
+			[
+				"model",
+				"model_url"
+			],
+			[
+				"active",
+				"activateByUrl"
+			],
+			[
+				"ite",
+				"itemClick"
+			],
+			[
+				"giv",
+				"giveAdv"
+			],
+			[
+				"App",
+				"ApplicationController"
+			],
+			[
+				"mode",
+				"moderation"
+			],
+			[
+				"top_me",
+				"top_menu_view"
+			],
+			[
+				"Top",
+				"TopMenuCollection"
+			],
+			[
+				"Con",
+				"Collections"
+			],
+			[
+				"Tp",
+				"TopMenuItem"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"col",
+				"collView"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"PersonCol",
+				"PersonCollectionView"
+			],
+			[
+				"pers",
+				"personView"
+			],
+			[
+				"Pers",
+				"PersonCollection"
+			],
+			[
+				"Per",
+				"Person"
+			],
+			[
+				"nic",
+				"nickView"
+			],
+			[
+				"ni",
+				"nickView"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"depl",
+				"deploy_test"
+			],
+			[
+				"grou",
+				"group_id"
+			],
+			[
+				"permi",
+				"permission"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"bloc",
+				"block"
+			],
+			[
+				"out",
+				"output_abc"
+			],
+			[
+				"ce",
+				"cezar_encrypt"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"HttpRe",
+				"HttpResponseRedirect"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 371.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import script1",
+			"dir()",
+			"import script1",
+			"./script1.py",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/dmitry/Documents/Diplom/source"
+	],
+	"file_history":
+	[
+		"/home/dmitry/Documents/Diplom/source/css/template.css",
+		"/home/dmitry/Documents/Diplom/source/css/themes/main.css",
+		"/home/dmitry/Documents/Diplom/source/index.html",
+		"/home/dmitry/Documents/Diplom/source/css/theme-main.css",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/aboutus.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/partners.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/protemplates.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/contacts.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/documents.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/certificates.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/license.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/map.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/services.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/templates.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/index.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/terms.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/freetemplates.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/help_builder.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/e-commerce.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/css/template.css",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/top.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/header.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/testimonials.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/video.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/host-europe.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/host-usa.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/host.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/wordpress.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/vps.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/security.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/ruskyconstructor.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/rubyonrails.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/prestashop.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/policies.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/opencart.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/magento.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/joomla.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/freehosting.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/domains.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/django.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/builder.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/autoinstaller.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/robots.txt",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/web-presence-builder/index.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/hosting.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/.htaccess",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-po-email/nastrojka-pochtovykh-klientov/nastrojka-pochtovogo-klienta-T.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/programmy-dlya-raboty-s-FTP.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-o-domenakh/ya-ne-mogu-popast-na-panel-upr.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/old/public_html/host-usa.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/policies/oferta.html",
+		"/home/dmitry/Downloads/seo-a-z-27-04-2016/readme.txt",
+		"/home/dmitry/Documents/Ruskyhost/новые услуги VPS/ror.html",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/left-footer.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/money2str.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/index.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blankua.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blank1_ua.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blank.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blank1.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_yandex_builder.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_google_builder.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_yandex_malware.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_google_malware.php",
+		"/tmp/fz3temp-1/robots.txt",
+		"/tmp/fz3temp-1/sitemap.xml",
+		"/tmp/fz3temp-1/error_log",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/site_structure.txt",
+		"/home/dmitry/Downloads/front-page.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/list_pages.txt",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/sitemap.xml",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/config.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/map.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/studio.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/404.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/.git/hooks/post-receive",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/test.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-po-baze-dannykh-MySQL/error_log",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-po-baze-dannykh-MySQL/voprosiki-v-baze-dannykh.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/rabota-s-fajlami-i-direktoriyami/kak-izmenit-atributy-papki-ili.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/rabota-s-fajlami-i-direktoriyami/error_log",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/files.txt",
+		"/tmp/fz3temp-1/functions.php",
+		"/tmp/fz3temp-1/wp-config.php",
+		"/home/dmitry/Downloads/ru_RU.po",
+		"/tmp/fz3temp-1/style.css",
+		"/home/dmitry/Downloads/infotech-ru_RU.po",
+		"/tmp/fz3temp-1/ru_RU.po",
+		"/home/dmitry/Downloads/ru_RU.mo",
+		"/home/dmitry/Documents/Manage_CMD_processes.txt",
+		"/home/dmitry/Documents/Ruskyhost/VPN/VpnForU-OpenVPN/UDP-1194/auth.txt",
+		"/home/dmitry/Documents/Ruskyhost/VPN/VpnForU-OpenVPN/UDP-1194/vpnforu.crt",
+		"/home/dmitry/Downloads/Vpnforu-UK-Manchester.ovpn",
+		"/home/dmitry/Downloads/vpngate_118.240.30.93_udp_1892.ovpn",
+		"/home/dmitry/Documents/Ruskyhost/VPN/connect2vpn.sh",
+		"/home/dmitry/Documents/Ruskyhost/Servers/Common.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c40usa.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/scripts.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/vps2rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/vps-usa.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c41rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c37rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c36rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c35rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c34rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c33rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c32rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c31rus.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/Servers/c30euro.ruskyhost.com.txt",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/.gitignore",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/old/public_html/autoinstaller.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/bottom.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/новая папка/public_html/bottom.inc.php",
+		"/home/dmitry/.cache/.fr-FMjD0p/public_html/left-footer.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/left-header.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/left.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/index.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/top.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/.htaccess.ww",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/.htaccess.w",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/.htaccess",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/search_domain.inc.php",
+		"/home/dmitry/Documents/Ruskyhost/VPN/VpnForU-OpenVPN/UDP-1194/Vpnforu-UK-Manchester.ovpn",
+		"/home/dmitry/Documents/Ruskyhost/VPN/VpnForU-OpenVPN/auth.txt",
+		"/home/dmitry/Downloads/vpngate_vpn203976800.opengw.net_udp_1933.ovpn",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/money2str_ua.php.bk",
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/money2str_ua.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"",
+			"/home/dmitry/Documents/Ruskyhost/MainSite/новая папка/public_html/",
+			"<open files>",
+			"",
+			"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial",
+			"<open folders>",
+			"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/",
+			"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/,-lightwindow/",
+			"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/,-/home/dmitry/Documents/Ruskyhost/MainSite/public_html/lightwindow/",
+			"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/",
+			"/home/dmitry/Downloads/tmp/",
+			"/home/dmitry/Downloads/belart136_1/",
+			"<open folders>",
+			"/media/dmitry/BE7E55AB7E555CE9/Users/Дмитрий/Documents/Работа/Раски/billing order form/backup/billing.ruskyhost.ru/2016-12-27/templates/orderforms/ruskyhost/",
+			"/media/dmitry/BE7E55AB7E555CE9/Users/Дмитрий/Documents/Работа/Раски/billing order form/backup/billing.ruskyhost.ru/2016-12-27/templates/",
+			"/media/dmitry/BE7E55AB7E555CE9/Users/Дмитрий/Documents/Работа/Раски/billing order form/backup/billing.ruskyhost.ru/2016-12-27/templates/orderforms/",
+			"/media/dmitry/BE7E55AB7E555CE9/Users/Дмитрий/Documents/Работа/Раски/billing order form/backup/billing.ruskyhost.ru/2016-12-27/templates/orderforms/ruskyhost/",
+			"<open folders>",
+			"/media/dmitry/BE7E55AB7E555CE9/Users/Дмитрий/Documents/Работа/Раски/backup/billing.ruskyhost.ru/2016-12-27/templates/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Инструкция cPane",
+			"Купить хостинг",
+			"Заказать >>",
+			"заказать",
+			"тест",
+			"тестовым",
+			"перенос хостинг",
+			"хостинг",
+			"<!--",
+			"cpanel",
+			"cPanel",
+			"вы ",
+			"веб-хостинг",
+			"хостинг-провайдер",
+			"\\n",
+			"addon_start_r",
+			"(.+) (.+)",
+			"inter_3",
+			"ip_vps_3",
+			"inter_3",
+			"inter_1",
+			"name_2",
+			"name_5",
+			"$150",
+			"amount",
+			"number_format",
+			"testimonials",
+			"license",
+			"terms",
+			"partners",
+			"documents",
+			"policies",
+			"contacts",
+			"map",
+			"aboutus",
+			"video",
+			"autoinstaller",
+			"pay",
+			"security",
+			"services",
+			"protemplates",
+			"templates",
+			"freetemplates",
+			"ruskyconstructor",
+			"builder",
+			"vps",
+			"freehosting",
+			"magento",
+			"opencart",
+			"prestashop",
+			"joomla",
+			"wordpress",
+			"e-commerce",
+			"host-usa",
+			"host-europe",
+			"host",
+			"certificates",
+			"domains",
+			"studio",
+			"$config['design_enabled']",
+			"builder",
+			"images/ul.gif",
+			"?>",
+			"<?",
+			"./public_html/",
+			"./",
+			"_e",
+			", 'infotech'",
+			"_e",
+			"__",
+			"mydomain",
+			"myplugin",
+			"cena_Rapid_SSL",
+			"cena_Instant_SSL",
+			"cena_Rapid_SSL",
+			"cert",
+			"\\t+",
+			"\\s+",
+			"|",
+			"27050",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"33605",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"18974",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"3552",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"84932",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"20185",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"81359",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"69328",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"93724",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"49016",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"(\\d+) (\\d+)",
+			"VM349:24 ",
+			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"(\\d+) (\\d+)",
+			"VM303:24 ",
+			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"(\\d+) (\\d+)",
+			"VM255:24 ",
+			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"(\\d+) (\\d+)",
+			"VM215:24 ",
+			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"(\\d+) (\\d+)",
+			"VM169:24 ",
+			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"(\\d+) (\\d+)",
+			"VM123:24 ",
+			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
+			"(\\d+)\\t\\|\\t(\\d+)",
+			"(\\d+) (\\d+)",
+			"VM54:24 ",
+			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-z.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
+			"([a-zA-Zа-яА-ЯёЁ ]+)\\t(http://[a-z\\/\\.\\-]+)\\t(\\d\\d.\\d\\d.\\d\\d\\s\\d\\d:\\d\\d)\\t([a-z:\\/\\.\\#\\-\\d]+)(.+)\\n",
+			"design@"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"Купить хостинг",
+			", ",
+			"$2 $1",
+			"/images/ul.gif",
+			"",
+			"infotech",
+			"\\t",
+			"",
+			"[$1, $2],",
+			"$1\\t|\\t$2",
+			"",
+			"[$1, $2, \"$3\"],",
+			"[$1, $2],",
+			"$1\\t|\\t$2",
+			"",
+			"[$1, $2, \"$3\"],",
+			"[$1, $2],",
+			"$1\\t|\\t$2",
+			"",
+			"[$1, $2, \"$3\"],",
+			"[$1, $2],",
+			"$1\\t|\\t$2",
+			"",
+			"[$1, $2, \"$3\"],",
+			"[$1, $2],",
+			"$1\\t|\\t$2",
+			"",
+			"[$1, $2, \"$3\"],",
+			"[$1, $2],",
+			"$1\\t|\\t$2",
+			"",
+			"[$1, $2, \"$3\"],",
+			"[$1, $2],",
+			"$1\\t|\\t$2",
+			"",
+			"[$1, $2, \"$3\"],",
+			"array(\\n\\t\"name\" => \"$1\",\\n\\t\"site_url\" => \"$2\",\\n\\t\"time\" => \"$3\",\\n\\t\"overview_url\" => \"$4\",\\n\\t\"text\" => \"$5\",\\n),\\n",
+			"array(\\n\\t\"name\" => \"$1\",\\n\\t\"site_url\" => \"$2\",\\n\\t\"time\" => \"$3\",\\n\\t\"overview_url\" => \"$4\",\\n\\t\"text\" => \"$5\",\\n),",
+			"XXXXXX",
+			"http://billing.ruskyhost.ru/aff.php?aff=XXX",
+			"http://billing.ruskyhost.ru/aff.php?aff=280",
+			"$1",
+			"",
+			"http://sitestudio.ruskyhost.ru/masonry/widgets/simple/help/help.html",
+			"",
+			"https://ruskyhost.ru",
+			"<a href=\"http://localhost/$1\" target=\"_blank\">$1</a><br>",
+			"<a href=\"http://localhost/$1\" target=\"_blank\">$1</a>",
+			"/core/blocks/ssl.inc.php",
+			"/core/blocks/search_domain.inc.php",
+			"/core/blocks/top.inc.php",
+			"\"../images",
+			"(../images",
+			"../images",
+			"/core/blocks/left.inc.php",
+			"/core/blocks/left-footer.inc.php",
+			"/core/blocks/left-header.inc.php",
+			"/core/blocks/conf.inc.php",
+			"/core/blocks/bottom.inc.php",
+			"require($_SERVER['DOCUMENT_ROOT'].\"/",
+			"$_SERVER['DOCUMENT_ROOT'].\"/",
+			"../images",
+			"\\t",
+			"| 0\t0\t0\t0\t1\\n",
+			"| 0\t0\t0\t1\t0\\n",
+			"| 0\t0\t0\t1\t0",
+			"| 0\t0\t1\t0\t0\\n",
+			"| 0\t0\t1\t0\t0",
+			"| 0\t1\t0\t0\t0\\n",
+			"| 1\t0\t0\t0\t0\\n",
+			"| 1\t0\t0\t0\t0",
+			"",
+			"\\t",
+			"",
+			"\\t",
+			"\\t\\t|\\t\\t",
+			"\\t\\t;\\t\\t",
+			"",
+			" | ",
+			"",
+			"=>",
+			"${n} | $1",
+			"$n | $1",
+			"Radverts.Models.Section",
+			"Radverts.Models.Page",
+			"TopMenu",
+			"TopMenuGiveAdvItem",
+			"TopMenuItem",
+			"TopMenu",
+			"Отклонить",
+			"Одобрить",
+			"администратор",
+			"модератор",
+			"блокирован",
+			"",
+			".show_filter_panel_btn",
+			".filter_panel"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "",
+	"project": "ElKaf.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 337.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
