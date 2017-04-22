@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"sm",
+				"smarty"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"OpenSa",
+				"OpenSans-Regular-webfont"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
 				"SSL-сер",
 				"SSL-сертификаты"
 			],
@@ -14,10 +46,6 @@
 			[
 				"wd",
 				"width"
-			],
-			[
-				"padd",
-				"padding-bottom"
 			],
 			[
 				"pad",
@@ -319,6 +347,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 148,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/template.css",
+			"settings":
+			{
+				"buffer_size": 237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main-theme.css",
+			"settings":
+			{
+				"buffer_size": 80688,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -361,13 +415,41 @@
 	},
 	"expanded_folders":
 	[
-		"/home/dmitry/Documents/Diplom/source"
+		"/home/dmitry/Documents/Diplom/source",
+		"/home/dmitry/Documents/Diplom/source/css",
+		"/home/dmitry/Documents/Diplom/source/engine",
+		"/home/dmitry/Documents/Diplom/source/engine/modules",
+		"/home/dmitry/Documents/Diplom/source/engine/templates"
 	],
 	"file_history":
 	[
-		"/home/dmitry/Documents/Diplom/source/css/template.css",
-		"/home/dmitry/Documents/Diplom/source/css/themes/main.css",
+		"/home/dmitry/Documents/Diplom/source/css/themes/main/main.css",
+		"/home/dmitry/Documents/Diplom/source/engine/config.php",
+		"/home/dmitry/Documents/Diplom/source/engine/header.php",
+		"/home/dmitry/Documents/Diplom/source/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/footer.php",
+		"/home/dmitry/Documents/Diplom/source/.gitignore",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/smarty/debug.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates_c/%%F7^F7F^F7F34188%%header.tpl.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/header.tpl",
 		"/home/dmitry/Documents/Diplom/source/index.html",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/basic.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/footer.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/smarty/Smarty.class.php",
+		"/home/dmitry/Documents/Diplom/source/core/footer.php",
+		"/home/dmitry/Documents/Diplom/source/core/header.php",
+		"/home/dmitry/Documents/Diplom/source/test.html",
+		"/home/dmitry/Documents/Diplom/source/css/template.css",
+		"/home/dmitry/Downloads/arcive/Error log - OpenSans-Semibold.ttf.json",
+		"/home/dmitry/Downloads/arcive/Error log - OpenSans-Italic.ttf.json",
+		"/home/dmitry/Downloads/webfontkit-20170422-115744/stylesheet.css",
+		"/home/dmitry/Downloads/webfontkit-20170422-115744/opensans-regular-demo.html",
+		"/home/dmitry/Downloads/webfontkit-20170422-115744/specimen_files/grid_12-825-55-15.css",
+		"/home/dmitry/Downloads/webfontkit-20170422-115744/specimen_files/specimen_stylesheet.css",
+		"/home/dmitry/Documents/Diplom/source/fonts/opensans_regular_macroman/stylesheet.css",
+		"/home/dmitry/Documents/Diplom/source/css/themes/main.css",
+		"/home/dmitry/Documents/Diplom/source/LICENSE",
+		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-project",
 		"/home/dmitry/Documents/Diplom/source/css/theme-main.css",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/aboutus.php",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/partners.php",
@@ -468,31 +550,7 @@
 		"/home/dmitry/Documents/Ruskyhost/Servers/vps-usa.ruskyhost.com.txt",
 		"/home/dmitry/Documents/Ruskyhost/Servers/c41rus.ruskyhost.com.txt",
 		"/home/dmitry/Documents/Ruskyhost/Servers/c37rus.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/Servers/c36rus.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/Servers/c35rus.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/Servers/c34rus.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/Servers/c33rus.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/Servers/c32rus.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/Servers/c31rus.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/Servers/c30euro.ruskyhost.com.txt",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/.gitignore",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/old/public_html/autoinstaller.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/bottom.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/новая папка/public_html/bottom.inc.php",
-		"/home/dmitry/.cache/.fr-FMjD0p/public_html/left-footer.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/left-header.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/left.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/index.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/top.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/.htaccess.ww",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/.htaccess.w",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/.htaccess",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/search_domain.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/VPN/VpnForU-OpenVPN/UDP-1194/Vpnforu-UK-Manchester.ovpn",
-		"/home/dmitry/Documents/Ruskyhost/VPN/VpnForU-OpenVPN/auth.txt",
-		"/home/dmitry/Downloads/vpngate_vpn203976800.opengw.net_udp_1933.ovpn",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/money2str_ua.php.bk",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/money2str_ua.php"
+		"/home/dmitry/Documents/Ruskyhost/Servers/c36rus.ruskyhost.com.txt"
 	],
 	"find":
 	{
@@ -771,8 +829,102 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "css/template.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/main-theme.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 80688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -793,6 +945,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -803,6 +961,7 @@
 		"rows":
 		[
 			0.0,
+			0.762443438914,
 			1.0
 		]
 	},
