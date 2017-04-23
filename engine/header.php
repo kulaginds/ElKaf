@@ -47,6 +47,11 @@ $config['template']['menu'] = $menu;
 // подключаю параметры шаблона из конфига
 $smarty->assign('config', $config['template']);
 
+if (!isset($anon_page) && !$auth->is_auth()) {
+	header('Location: /index.php');
+	die();
+}
+
 // включаю буферизацию вывода
 ob_start();
 

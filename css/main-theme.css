@@ -33,8 +33,38 @@ a:hover {
 	text-decoration: none;
 }
 
-fieldset {
+fieldset, table.table {
 	margin-bottom: 20px;
+}
+
+/*
+	Common styles
+*/
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.menu.mb, .menu.paginator {
+	margin-bottom: 20px;
+}
+
+.menu.paginator {
+	text-align: center;
+}
+
+.table {
+	border: 1px solid #669966;
+	width: 100%;
+}
+
+.table th, .table td {
+	padding: 5px;
+	border: 1px solid #99CC99;
 }
 
 /*
@@ -60,7 +90,10 @@ nav {
 	padding-bottom: 0;
 }
 
-nav ul li a {
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:active,
+nav ul li a:focus {
 	display: inline-block;
 	padding: 10px;
 	text-decoration: none;
