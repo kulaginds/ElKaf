@@ -33,6 +33,10 @@ a:hover {
 	text-decoration: none;
 }
 
+fieldset {
+	margin-bottom: 20px;
+}
+
 /*
 	Addon styles
 */
@@ -70,6 +74,10 @@ nav ul li a:hover {
 .content {
 	padding-top: 1px;
 	padding-bottom: 1px;
+}
+
+.content .error {
+	color: #FF6633;
 }
 
 footer {

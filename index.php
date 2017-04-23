@@ -1,6 +1,9 @@
-<?php include(__DIR__.'/engine/header.php'); ?>
+<?php
 
-<h1>Главная страница</h1>
-<p>Добро пожаловать!</p>
+include(__DIR__.'/engine/header.php');
 
-<?php include(__DIR__.'/engine/footer.php'); ?>
+$smarty->display('pages/index.tpl');
+
+include(__DIR__.'/engine/footer.php');
+
+?>
