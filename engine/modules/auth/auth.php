@@ -34,6 +34,16 @@ class Auth
 		return array_key_exists('user', $_SESSION) && !empty($_SESSION['user']);
 	}
 
+	function protect_page($user_type) {
+		if (!$this->is_auth()) {
+			throw new Exception('Для просмотра данной страницы необходимо войти.');
+		}
+
+		if ($_SESSION['user']['type'] != $user_type) {
+			throw new Exception('У вас нет прав для просмотра данной страницы.');
+		}
+	}
+
 	function get_user() {
 		return $this->is_auth() ? $_SESSION['user'] : null;
 	}

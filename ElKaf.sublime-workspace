@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"user",
+				"user_type"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"teacher",
+				"teacher_id"
+			],
+			[
+				"tea",
+				"teacher"
+			],
+			[
+				"teac",
+				"teacher"
+			],
+			[
+				"disc",
+				"discipline"
+			],
+			[
+				"disci",
+				"discipline"
+			],
+			[
+				"dis",
+				"discipline_id"
+			],
+			[
+				"дисци",
+				"дисциплину"
+			],
+			[
 				"pass",
 				"password_hash"
 			],
@@ -22,10 +58,6 @@
 			[
 				"th",
 				"this"
-			],
-			[
-				"user",
-				"user"
 			],
 			[
 				"user_",
@@ -404,28 +436,19 @@
 	"buffers":
 	[
 		{
-			"file": "engine/config.php",
+			"file": "engine/modules/auth/auth.php",
 			"settings":
 			{
-				"buffer_size": 1597,
+				"buffer_size": 2514,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/template.css",
+			"file": "engine/header.php",
 			"settings":
 			{
-				"buffer_size": 237,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/main-theme.css",
-			"settings":
-			{
-				"buffer_size": 81141,
+				"buffer_size": 1667,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -473,35 +496,55 @@
 	"expanded_folders":
 	[
 		"/home/dmitry/Documents/Diplom/source",
-		"/home/dmitry/Documents/Diplom/source/css",
+		"/home/dmitry/Documents/Diplom/source/disciplines",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers",
 		"/home/dmitry/Documents/Diplom/source/engine",
 		"/home/dmitry/Documents/Diplom/source/engine/modules",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/auth",
 		"/home/dmitry/Documents/Diplom/source/engine/templates",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages"
+		"/home/dmitry/Documents/Diplom/source/users"
 	],
 	"file_history":
 	[
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/header.php",
 		"/home/dmitry/Documents/Diplom/source/users/add.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/password.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/users/delete.php",
 		"/home/dmitry/Documents/Diplom/source/users/edit.php",
 		"/home/dmitry/Documents/Diplom/source/users/index.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/users/password.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/add.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/delete.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/index.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/add.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/delete.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/edit.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/error.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/auth/auth.php",
-		"/home/dmitry/Documents/Diplom/source/users/delete.php",
 		"/home/dmitry/Documents/Diplom/source/engine/config.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/css/main-theme.css",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/css/template.css",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/password.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/auth/form.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/header.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/basic.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/footer.php",
-		"/home/dmitry/Documents/Diplom/source/engine/header.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/paginator.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/index.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/admin/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/admin/index.php",
 		"/home/dmitry/Documents/Diplom/source/css/themes/main/main.css",
@@ -514,7 +557,6 @@
 		"/home/dmitry/Documents/Diplom/source/core/footer.php",
 		"/home/dmitry/Documents/Diplom/source/core/header.php",
 		"/home/dmitry/Documents/Diplom/source/test.html",
-		"/home/dmitry/Documents/Diplom/source/css/template.css",
 		"/home/dmitry/Downloads/arcive/Error log - OpenSans-Semibold.ttf.json",
 		"/home/dmitry/Downloads/arcive/Error log - OpenSans-Italic.ttf.json",
 		"/home/dmitry/Downloads/webfontkit-20170422-115744/stylesheet.css",
@@ -591,24 +633,7 @@
 		"/tmp/fz3temp-1/sitemap.xml",
 		"/tmp/fz3temp-1/error_log",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/site_structure.txt",
-		"/home/dmitry/Downloads/front-page.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/list_pages.txt",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/sitemap.xml",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/config.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/map.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/studio.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/404.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/.git/hooks/post-receive",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/test.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-po-baze-dannykh-MySQL/error_log",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-po-baze-dannykh-MySQL/voprosiki-v-baze-dannykh.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/rabota-s-fajlami-i-direktoriyami/kak-izmenit-atributy-papki-ili.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/rabota-s-fajlami-i-direktoriyami/error_log",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/files.txt",
-		"/tmp/fz3temp-1/functions.php",
-		"/tmp/fz3temp-1/wp-config.php",
-		"/home/dmitry/Downloads/ru_RU.po",
-		"/tmp/fz3temp-1/style.css"
+		"/home/dmitry/Downloads/front-page.php"
 	],
 	"find":
 	{
@@ -645,6 +670,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"is_auth",
+			"check_delete_teacher_fields",
+			"handle_delete_teacher_form",
+			"throw new Exception",
+			"$this->db->error",
+			"не удалось",
+			"teachers",
+			"не удалось получить",
+			"handle_edit_form",
+			"$edit_user",
+			"check_edit_fields",
+			"handle_add_form",
+			"check_edit_fields",
+			"handle_edit_form",
+			"edit",
+			"check_edit_fields",
+			"handle_edit_form",
 			"handle_delete_form",
 			"$user",
 			"user_types",
@@ -755,24 +797,7 @@
 			"VM303:24 ",
 			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
 			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)",
-			"VM255:24 ",
-			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)",
-			"VM215:24 ",
-			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)",
-			"VM169:24 ",
-			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)",
-			"VM123:24 ",
-			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)",
-			"VM54:24 "
+			"(\\d+) (\\d+)"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -780,6 +805,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$edit_discipline",
 			"$edit_user",
 			"Купить хостинг",
 			", ",
@@ -893,19 +919,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "engine/config.php",
+					"file": "engine/modules/auth/auth.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1597,
+						"buffer_size": 2514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								306,
-								306
+								943,
+								943
 							]
 						],
 						"settings":
@@ -914,72 +940,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 330.0,
+						"translation.y": 640.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "css/template.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								135,
-								135
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 239.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "css/main-theme.css",
+					"buffer": 1,
+					"file": "engine/header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 81141,
+						"buffer_size": 1667,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								80289,
-								80289
+								1348,
+								1348
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 1113.0,
+						"translation.x": -0.0,
+						"translation.y": 1122.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1005,12 +995,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
 			]
 		],
 		"cols":
@@ -1021,7 +1005,6 @@
 		"rows":
 		[
 			0.0,
-			0.643288084465,
 			1.0
 		]
 	},
@@ -1076,7 +1059,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 337.0,
+	"side_bar_width": 204.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

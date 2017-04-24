@@ -1,5 +1,7 @@
 <?php
 
+$access = 'administrator';
+
 include(__DIR__.'/../engine/header.php');
 require_once(__DIR__.'/../engine/modules/users/users.php');
 require_once(__DIR__.'/../engine/modules/disciplines/disciplines.php');

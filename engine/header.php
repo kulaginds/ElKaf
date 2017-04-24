@@ -34,6 +34,7 @@ $menu = $config['template']['menu']['all'];
 // инициализация модуля авторизации
 $auth = new Auth($smarty, $db, $config['security']['auth_salt']);
 
+// подготовка пунктов меню для отображения
 try {
 	$auth->handle_actions();
 	
@@ -49,12 +50,21 @@ $config['template']['menu'] = $menu;
 // подключаю параметры шаблона из конфига
 $smarty->assign('config', $config['template']);
 
-if (!isset($anon_page) && !$auth->is_auth()) {
-	header('Location: /index.php');
-	die();
-}
-
 // включаю буферизацию вывода
 ob_start();
+
+// проверяю права доступа
+if (isset($access) && !empty($access)) {
+	try {
+		$auth->protect_page($access);
+	} catch (Exception $e) {
+		$smarty->assign('error', $e->getMessage());
+
+		$smarty->display('error.tpl');
+
+		include(__DIR__.'/../engine/footer.php');
+		die();
+	}
+}
 
 ?>
