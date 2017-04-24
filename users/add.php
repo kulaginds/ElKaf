@@ -3,8 +3,10 @@
 include(__DIR__.'/../engine/header.php');
 require_once(__DIR__.'/../engine/modules/users/users.php');
 
+$users = new Users($db, $smarty, $config['user_types'], $config['security']['auth_salt']);
+
 try {
-	$users = new Users($db, $smarty, $config['user_types'], $config['security']['auth_salt']);
+	$users->handle_actions();
 } catch (Exception $e) {
 	$smarty->assign('error', $e->getMessage());
 }

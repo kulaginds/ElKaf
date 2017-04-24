@@ -22,7 +22,9 @@ class Users
 		$this->smarty     = $smarty;
 		$this->user_types = $user_types;
 		$this->auth_salt  = $auth_salt;
+	}
 
+	function handle_actions() {
 		if (array_key_exists('action', $_POST)) {
 			switch ($_POST['action']) {
 				case 'password':

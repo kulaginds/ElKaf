@@ -32,8 +32,10 @@ $smarty->compile_dir = __DIR__.'/templates_c/';
 $menu = $config['template']['menu']['all'];
 
 // инициализация модуля авторизации
+$auth = new Auth($smarty, $db, $config['security']['auth_salt']);
+
 try {
-	$auth = new Auth($smarty, $db, $config['security']['auth_salt']);
+	$auth->handle_actions();
 	
 	if ($auth->is_auth()) {
 		$menu = array_merge($menu, $config['template']['menu'][$auth->get_user()['type']]);

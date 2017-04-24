@@ -15,7 +15,9 @@ class Auth
 		$this->auth_salt = $auth_salt;
 
 		session_start();
+	}
 
+	function handle_actions() {
 		if (!$this->is_auth()) {
 			if (array_key_exists('action', $_POST) && $_POST['action'] == 'login') {
 				$this->handle_auth_form();
