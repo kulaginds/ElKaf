@@ -94,6 +94,7 @@ class Auth
 	function logout() {
 		session_destroy();
 		header('Location: /index.php');
+		die();
 	}
 }
 

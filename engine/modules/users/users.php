@@ -118,6 +118,7 @@ class Users
 		}
 
 		header('Location: /users/index.php');
+		die();
 	}
 
 	function handle_edit_form() {
@@ -181,6 +182,7 @@ class Users
 		}
 
 		header('Location: /users/index.php');
+		die();
 	}
 
 	function handle_add_form() {
@@ -204,6 +206,7 @@ class Users
 		}
 
 		header('Location: /users/index.php');
+		die();
 	}
 }
 
