@@ -60,6 +60,10 @@ $config['template']['menu']   = array(
 			'title' => 'Расписания',
 		),
 		array(
+			'href'  => '/documents/index.php',
+			'title' => 'Документы',
+		),
+		array(
 			'href'  => '/index.php?action=logout',
 			'title' => 'Выйти',
 		),
