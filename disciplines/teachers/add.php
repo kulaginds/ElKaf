@@ -7,7 +7,7 @@ require_once(__DIR__.'/../../engine/modules/users/users.php');
 require_once(__DIR__.'/../../engine/modules/disciplines/disciplines.php');
 
 $users        = new Users($db, $smarty, $config['user_types'], $config['security']['auth_salt']);
-$disciplines  = new Disciplines($db, $smarty, $users);
+$disciplines  = new Disciplines($db, $users);
 $id           = max((int)$_GET['id'], 0);
 $discipline   = null;
 $teacher_list = null;

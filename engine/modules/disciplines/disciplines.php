@@ -3,7 +3,6 @@
 class Disciplines
 {
 	protected $db                 = null;
-	protected $smarty             = null;
 	protected $users              = null;
 	
 	public $id                    = null;
@@ -17,9 +16,8 @@ class Disciplines
 	public $discipline_list_limit = 10;
 	public $discipline_list_count = 0;
 
-	function __construct($db, $smarty, $users) {
+	function __construct($db, $users) {
 		$this->db     = $db;
-		$this->smarty = $smarty;
 		$this->users  = $users;
 	}
 
