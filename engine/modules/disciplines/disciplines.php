@@ -61,7 +61,7 @@ class Disciplines
 	}
 
 	function set_discipline_list_count() {
-		$result = $this->db->query('SELECT COUNT(*) FROM discipline');
+		$result                      = $this->db->query('SELECT COUNT(*) FROM discipline');
 		$this->discipline_list_count = $result->fetch_array()[0];
 	}
 
