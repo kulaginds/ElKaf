@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Апр 24 2017 г., 11:41
+-- Время создания: Апр 25 2017 г., 22:08
 -- Версия сервера: 5.7.17-0ubuntu0.16.04.2
 -- Версия PHP: 7.0.15-0ubuntu0.16.04.4
 
@@ -84,7 +84,7 @@ CREATE TABLE `group` (
 
 CREATE TABLE `schedule` (
   `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(10) NOT NULL,
+  `name` varchar(30) NOT NULL,
   `group_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -111,6 +111,17 @@ CREATE TABLE `user` (
 CREATE TABLE `user_discipline` (
   `user_id` int(10) UNSIGNED NOT NULL,
   `discipline_id` int(10) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_document`
+--
+
+CREATE TABLE `user_document` (
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `document_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -176,6 +187,13 @@ ALTER TABLE `user`
 ALTER TABLE `user_discipline`
   ADD PRIMARY KEY (`user_id`,`discipline_id`),
   ADD KEY `discipline_id` (`discipline_id`);
+
+--
+-- Индексы таблицы `user_document`
+--
+ALTER TABLE `user_document`
+  ADD PRIMARY KEY (`user_id`,`document_id`),
+  ADD KEY `document_id` (`document_id`);
 
 --
 -- Индексы таблицы `user_group`
@@ -248,6 +266,13 @@ ALTER TABLE `schedule`
 ALTER TABLE `user_discipline`
   ADD CONSTRAINT `user_discipline_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `user_discipline_ibfk_2` FOREIGN KEY (`discipline_id`) REFERENCES `discipline` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Ограничения внешнего ключа таблицы `user_document`
+--
+ALTER TABLE `user_document`
+  ADD CONSTRAINT `user_document_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `user_document_ibfk_2` FOREIGN KEY (`document_id`) REFERENCES `document` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Ограничения внешнего ключа таблицы `user_group`
