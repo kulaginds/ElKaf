@@ -82,6 +82,28 @@ class Users
 		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	}
 
+	function get_students_in_group($group_id) {
+		$stmt = $this->db->prepare('SELECT user.* FROM user_group JOIN user ON user_group.user_id=user.id WHERE user_group.group_id=?');
+		$stmt->bind_param('i', $group_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список студентов группы.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function get_students_not_in_group($group_id) {
+		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT DISTINCT user_id FROM user_group) AND type=\'student\'');
+		$stmt->bind_param('i', $group_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список студентов без группы.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
 	function set_user_list_count() {
 		$result = $this->db->query('SELECT COUNT(*) FROM user');
 		$this->user_list_count = $result->fetch_array()[0];
@@ -116,6 +138,23 @@ class Users
 
 		if (empty($result)) {
 			throw new Exception('Преподавателя не существует.');
+		}
+
+		return $result;
+	}
+
+	function get_student($id) {
+		$stmt = $this->db->prepare('SELECT * FROM user WHERE id=? AND type=\'student\'');
+		$stmt->bind_param('i', $id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить данные студента.');
+		}
+
+		$result = $stmt->get_result()->fetch_assoc();
+
+		if (empty($result)) {
+			throw new Exception('Студента не существует.');
 		}
 
 		return $result;
