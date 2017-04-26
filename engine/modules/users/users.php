@@ -2,10 +2,10 @@
 
 class Users
 {
-	protected $db               = null;
-	protected $smarty           = null;
-	protected $user_types       = null;
-	protected $auth_salt        = null;
+	protected $db            = null;
+	protected $smarty        = null;
+	protected $user_types    = null;
+	protected $auth_salt     = null;
 	
 	public $name             = null;
 	public $type             = null;
@@ -13,9 +13,9 @@ class Users
 	public $password         = null;
 	public $password_confirm = null;
 	
-	public $page                = 0;
-	public $user_list_limit     = 10;
-	public $user_list_count     = 0;
+	public $page             = 0;
+	public $user_list_limit  = 10;
+	public $user_list_count  = 0;
 
 	function __construct($db, $smarty, $user_types, $auth_salt) {
 		$this->db         = $db;
@@ -77,6 +77,17 @@ class Users
 
 		if (!$stmt->execute()) {
 			throw new Exception('Не удалось получить список преподавателей дисциплины.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function get_teacher_list() {
+		$stmt = $this->db->prepare('SELECT user.* FROM user_discipline JOIN user ON user_discipline.user_id=user.id ORDER BY name ASC');
+		$stmt->bind_param('i', $discipline_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список преподавателей.');
 		}
 
 		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
