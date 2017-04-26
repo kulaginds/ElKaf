@@ -5,6 +5,8 @@
 <ul class="menu mb">
 	<li>
 		<a href="/groups/index.php">Список групп</a>
+	</li>
+	<li>
 		<a href="/groups/students/add.php?id={$group.id}">Добавить студентов в групппу</a>
 	</li>
 </ul>

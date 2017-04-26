@@ -5,6 +5,8 @@
 <ul class="menu mb">
 	<li>
 		<a href="/disciplines/index.php">Список дисциплин</a>
+	</li>
+	<li>
 		<a href="/disciplines/teachers/add.php?id={$discipline.id}">Добавить преподаватей в дисциплину</a>
 	</li>
 </ul>
