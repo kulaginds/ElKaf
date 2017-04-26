@@ -49,7 +49,7 @@ class Disciplines
 
 		$this->set_discipline_list_count();
 
-		$stmt       = $this->db->prepare('SELECT * FROM discipline LIMIT ?, ?');
+		$stmt       = $this->db->prepare('SELECT * FROM discipline ORDER BY name ASC LIMIT ?, ?');
 
 		$stmt->bind_param('ii', $offset, $this->discipline_list_limit);
 
