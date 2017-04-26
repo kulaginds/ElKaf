@@ -27,6 +27,33 @@ $config['user_types'] = array(
 );
 
 /*
+	Настройки расписаний
+*/
+$config['schedules'] = array();
+$config['schedules']['weeks'] = array(
+	'odd'  => 'нечётная неделя',
+	'even' => 'чётная неделя'
+);
+$config['schedules']['weekdays'] = array(
+	'понедельник',
+	'вторник',
+	'среда',
+	'четверг',
+	'пятница',
+	'суббота',
+);
+$config['schedules']['couples'] = array(
+	array('08:30', '10:00'),
+	array('10:10', '11:40'),
+	array('11:50', '13:20'),
+	array('14:00', '15:30'),
+	array('15:40', '17:10'),
+	array('17:20', '18:50'),
+	array('19:00', '20:30'),
+	array('20:40', '22:10'),
+);
+
+/*
 	Параметры шаблона
 */
 $config['template']           = array();

@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"sc",
+				"schedule"
+			],
+			[
+				"сту",
+				"студента"
+			],
+			[
+				"error",
+				"error_step"
+			],
+			[
+				"inputs",
+				"inputs\tinput - submit"
+			],
+			[
+				"input",
+				"inputt\tinput - text"
+			],
+			[
+				"step",
+				"step1"
+			],
+			[
+				"ret",
+				"ret\treturn"
+			],
+			[
 				"user",
 				"user_type"
 			],
@@ -436,41 +464,28 @@
 	"buffers":
 	[
 		{
-			"file": "engine/modules/auth/auth.php",
+			"file": "engine/modules/schedules/schedules.php",
 			"settings":
 			{
-				"buffer_size": 2514,
+				"buffer_size": 2151,
 				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "schedules.php"
+			}
+		},
+		{
+			"file": "schedules/add.php",
+			"settings":
+			{
+				"buffer_size": 922,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "# ElKaf\nПрограммная система \"Электронная кафедра\". Дипломный проект.\n\n## Подключение базы данных\nНеобходимо поправить файл engine/config.php в разделе \"Параметры подключения к БД\".\n\n## Структура базы данных\nХранится в файле elkaf",
-			"file": "README.md",
-			"file_size": 9,
-			"file_write_time": 131374970491887778,
+			"file": "engine/modules/groups/groups.php",
 			"settings":
 			{
-				"buffer_size": 229,
-				"line_ending": "Unix",
-				"name": "README.md"
-			}
-		},
-		{
-			"file": "install/index.php",
-			"settings":
-			{
-				"buffer_size": 9,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "index.php"
-			}
-		},
-		{
-			"file": "engine/header.php",
-			"settings":
-			{
-				"buffer_size": 1667,
+				"buffer_size": 5157,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -518,52 +533,82 @@
 	"expanded_folders":
 	[
 		"/home/dmitry/Documents/Diplom/source",
-		"/home/dmitry/Documents/Diplom/source/disciplines",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers",
 		"/home/dmitry/Documents/Diplom/source/engine",
 		"/home/dmitry/Documents/Diplom/source/engine/modules",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/auth",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/groups",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/schedules",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/users",
 		"/home/dmitry/Documents/Diplom/source/engine/templates",
-		"/home/dmitry/Documents/Diplom/source/install",
-		"/home/dmitry/Documents/Diplom/source/users"
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users",
+		"/home/dmitry/Documents/Diplom/source/groups",
+		"/home/dmitry/Documents/Diplom/source/schedules"
 	],
 	"file_history":
 	[
+		"/home/dmitry/Documents/Diplom/source/schedules/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/schedules/add.php",
+		"/home/dmitry/Documents/Diplom/source/groups/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/groups/add.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/config.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/groups/groups.php",
+		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-workspace",
+		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-project",
+		"/home/dmitry/Documents/Diplom/source/groups/edit.php",
+		"/home/dmitry/Documents/Diplom/source/groups/delete.php",
+		"/home/dmitry/Documents/Diplom/source/groups/students/index.php",
+		"/home/dmitry/Documents/Diplom/source/groups/students/add.php",
+		"/home/dmitry/Documents/Diplom/source/groups/students/delete.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/students/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/delete.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/students/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/add.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/students/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/groups/teachers/index.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/teachers/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/disciplines/delete.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/disciplines/edit.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/disciplines/add.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/groups/add.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/README.md",
+		"/home/dmitry/Documents/Diplom/source/install/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/header.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/auth/auth.php",
+		"/home/dmitry/Documents/Diplom/source/index.php",
 		"/home/dmitry/Downloads/public_html/administrator/includes/framework.php",
 		"/home/dmitry/Downloads/public_html/CHANGELOG.php",
 		"/home/dmitry/Downloads/Joomla_1.5.15-Stable-Full_Package/CHANGELOG.php",
 		"/home/dmitry/Downloads/public_html/language/en-GB/en-GB.xml",
-		"/home/dmitry/Documents/Diplom/source/index.php",
-		"/home/dmitry/Documents/Diplom/source/engine/header.php",
 		"/home/dmitry/Documents/Diplom/source/users/add.php",
 		"/home/dmitry/Documents/Diplom/source/users/delete.php",
 		"/home/dmitry/Documents/Diplom/source/users/edit.php",
 		"/home/dmitry/Documents/Diplom/source/users/index.php",
 		"/home/dmitry/Documents/Diplom/source/users/password.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/add.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/delete.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/index.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/add.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/delete.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/edit.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/index.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/error.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/auth/auth.php",
-		"/home/dmitry/Documents/Diplom/source/engine/config.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/delete.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/delete.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/delete.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/add.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/edit.tpl",
 		"/home/dmitry/Documents/Diplom/source/css/main-theme.css",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/add.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/edit.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/add.tpl",
 		"/home/dmitry/Documents/Diplom/source/css/template.css",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/password.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/auth/form.tpl",
@@ -593,7 +638,6 @@
 		"/home/dmitry/Documents/Diplom/source/fonts/opensans_regular_macroman/stylesheet.css",
 		"/home/dmitry/Documents/Diplom/source/css/themes/main.css",
 		"/home/dmitry/Documents/Diplom/source/LICENSE",
-		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-project",
 		"/home/dmitry/Documents/Diplom/source/css/theme-main.css",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/aboutus.php",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/partners.php",
@@ -631,32 +675,7 @@
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/joomla.php",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/freehosting.php",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/domains.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/django.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/builder.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/autoinstaller.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/robots.txt",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/web-presence-builder/index.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/hosting.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/.htaccess",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-po-email/nastrojka-pochtovykh-klientov/nastrojka-pochtovogo-klienta-T.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/programmy-dlya-raboty-s-FTP.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/tutorial/voprosy-o-domenakh/ya-ne-mogu-popast-na-panel-upr.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/old/public_html/host-usa.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/policies/oferta.html",
-		"/home/dmitry/Downloads/seo-a-z-27-04-2016/readme.txt",
-		"/home/dmitry/Documents/Ruskyhost/новые услуги VPS/ror.html",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/left-footer.inc.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/money2str.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/index.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blankua.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blank1_ua.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blank.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/pay/blank1.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_yandex_builder.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_google_builder.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_yandex_malware.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/link_google_malware.php",
-		"/tmp/fz3temp-1/robots.txt"
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/django.php"
 	],
 	"find":
 	{
@@ -693,6 +712,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"handle_add_form",
+			"group",
+			"discipline",
+			"teacher",
+			"handle_delete_teacher_form",
+			"teacher",
+			"discipline",
+			"teacher",
+			"discipline",
+			"дисциплины",
+			"преподавателя",
+			"discipline",
+			"teacher",
+			"handle_add_teachers_form",
+			"teacher",
+			"discipline",
+			"teacher",
+			"discipline",
+			"дисциплину",
+			"преподавателей",
+			"user",
+			"discipline",
+			"user",
+			"discipline",
+			"$this->id",
+			"get_discipline",
+			"discipline",
+			"handle_add_form",
+			"discipline_list_limit",
+			"smarty",
 			"is_auth",
 			"check_delete_teacher_fields",
 			"handle_delete_teacher_form",
@@ -790,37 +839,7 @@
 			"cena_Rapid_SSL",
 			"cert",
 			"\\t+",
-			"\\s+",
-			"|",
-			"27050",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"33605",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"18974",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"3552",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"84932",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"20185",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"81359",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"69328",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"93724",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"49016",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)",
-			"VM349:24 ",
-			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)",
-			"VM303:24 ",
-			"\\t(\\d+)\\t[a-zA-Zа-яА-Я0-9\\s\\-\\(\\)]+\\t[a-zA-Zа-яА-ЯёЁ.-\\d-]+\\swww\\t[a-zA-Z\\sа-яА-ЯёЁ`\\-\\_\\.]+\\t(\\d+).\\d+ руб.\\s([a-zA-Z\\-]+)\\t\\d\\d/\\d\\d/\\d\\d\\d\\d",
-			"(\\d+)\\t\\|\\t(\\d+)",
-			"(\\d+) (\\d+)"
+			"\\s+"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -828,6 +847,22 @@
 		"regex": false,
 		"replace_history":
 		[
+			"schedule",
+			"group",
+			"student",
+			"group",
+			"student",
+			"group",
+			"группы",
+			"студента",
+			"group",
+			"student",
+			"group",
+			"student",
+			"group",
+			"группу",
+			"студентов",
+			"group",
 			"$edit_discipline",
 			"$edit_user",
 			"Купить хостинг",
@@ -937,111 +972,87 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "engine/modules/auth/auth.php",
+					"file": "engine/modules/schedules/schedules.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2514,
+						"buffer_size": 2151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								943,
-								943
+								2097,
+								2097
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"auto_name": "schedules.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 640.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								229,
-								229
-							]
-						],
-						"settings":
-						{
-							"auto_name": "README.md",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1452.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "install/index.php",
+					"buffer": 1,
+					"file": "schedules/add.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9,
+						"buffer_size": 922,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9,
-								9
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "index.php",
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 198.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 3,
-					"file": "engine/header.php",
+					"buffer": 2,
+					"file": "engine/modules/groups/groups.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1667,
+						"buffer_size": 5157,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1348,
-								1348
+								2026,
+								2026
 							]
 						],
 						"settings":
@@ -1049,11 +1060,11 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 1122.0,
+						"translation.x": 0.0,
+						"translation.y": 1751.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1076,11 +1087,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.50430292599,
 			1.0
 		],
 		"rows":

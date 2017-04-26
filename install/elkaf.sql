@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Апр 25 2017 г., 22:08
+-- Время создания: Апр 26 2017 г., 17:12
 -- Версия сервера: 5.7.17-0ubuntu0.16.04.2
 -- Версия PHP: 7.0.15-0ubuntu0.16.04.4
 
@@ -33,9 +33,10 @@ CREATE TABLE `couple` (
   `discipline_id` int(10) UNSIGNED NOT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
   `schedule_id` int(10) UNSIGNED NOT NULL,
-  `auditory` varchar(10) NOT NULL,
-  `couple_number` tinyint(3) UNSIGNED NOT NULL,
-  `weekday` tinyint(3) UNSIGNED NOT NULL
+  `auditory` varchar(10) DEFAULT NULL,
+  `week` enum('odd','even') NOT NULL,
+  `weekday_index` tinyint(3) UNSIGNED NOT NULL,
+  `couple_index` tinyint(3) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -144,7 +145,7 @@ CREATE TABLE `user_group` (
 --
 ALTER TABLE `couple`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `auditory` (`auditory`,`couple_number`,`weekday`),
+  ADD UNIQUE KEY `auditory` (`auditory`,`week`,`weekday_index`,`couple_index`) USING BTREE,
   ADD KEY `discipline_id` (`discipline_id`),
   ADD KEY `schedule_id` (`schedule_id`),
   ADD KEY `user_id` (`user_id`);

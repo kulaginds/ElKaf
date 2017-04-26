@@ -4,8 +4,8 @@ body {
 }
 
 header, nav, .content, footer {
-	min-width: 800px;
-	width: 800px;
+	min-width: 1024px;
+	width: 1024px;
 	margin: 0 auto;
 	padding: 20px;
 }
