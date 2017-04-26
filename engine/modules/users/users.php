@@ -61,7 +61,7 @@ class Users
 	}
 
 	function get_teachers_not_in_discipline($discipline_id) {
-		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT user_id FROM user_discipline WHERE discipline_id=?) AND type=\'teacher\'');
+		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT user_id FROM user_discipline WHERE discipline_id=?) AND type=\'teacher\' ORDER BY name ASC');
 		$stmt->bind_param('i', $discipline_id);
 
 		if (!$stmt->execute()) {
@@ -72,7 +72,7 @@ class Users
 	}
 
 	function get_teachers_in_discipline($discipline_id) {
-		$stmt = $this->db->prepare('SELECT user.* FROM user_discipline JOIN user ON user_discipline.user_id=user.id WHERE user_discipline.discipline_id=?');
+		$stmt = $this->db->prepare('SELECT user.* FROM user_discipline JOIN user ON user_discipline.user_id=user.id WHERE user_discipline.discipline_id=? ORDER BY name ASC');
 		$stmt->bind_param('i', $discipline_id);
 
 		if (!$stmt->execute()) {
@@ -83,7 +83,7 @@ class Users
 	}
 
 	function get_students_in_group($group_id) {
-		$stmt = $this->db->prepare('SELECT user.* FROM user_group JOIN user ON user_group.user_id=user.id WHERE user_group.group_id=?');
+		$stmt = $this->db->prepare('SELECT user.* FROM user_group JOIN user ON user_group.user_id=user.id WHERE user_group.group_id=? ORDER BY name ASC');
 		$stmt->bind_param('i', $group_id);
 
 		if (!$stmt->execute()) {
@@ -94,7 +94,7 @@ class Users
 	}
 
 	function get_students_not_in_group($group_id) {
-		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT DISTINCT user_id FROM user_group) AND type=\'student\'');
+		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT DISTINCT user_id FROM user_group) AND type=\'student\' ORDER BY name ASC');
 		$stmt->bind_param('i', $group_id);
 
 		if (!$stmt->execute()) {
