@@ -144,8 +144,8 @@ class Disciplines
 		die();
 	}
 
-	function diff_fields($user) {
-		return ($user['name'] != $this->name) || ($user['description'] != $this->description) || ($user['literature'] != $this->literature);
+	function diff_fields($discipline) {
+		return ($discipline['name'] != $this->name) || ($discipline['description'] != $this->description) || ($discipline['literature'] != $this->literature);
 	}
 
 	function handle_delete_form() {

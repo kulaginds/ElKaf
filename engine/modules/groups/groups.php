@@ -127,7 +127,7 @@ class Groups
 	}
 
 	function diff_fields($group) {
-		return ($user['name'] != $this->name);
+		return ($group['name'] != $this->name);
 	}
 
 	function handle_delete_form() {
