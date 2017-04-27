@@ -4,8 +4,76 @@
 		"selected_items":
 		[
 			[
+				"dis",
+				"discipline_id"
+			],
+			[
+				"co",
+				"couple_index"
+			],
+			[
+				"weekd",
+				"weekday_index"
+			],
+			[
+				"audi",
+				"auditory"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"discip",
+				"discipline_id"
+			],
+			[
+				"disc",
+				"disciplines"
+			],
+			[
+				"wee",
+				"weekday_index"
+			],
+			[
+				"coupl",
+				"couple_index"
+			],
+			[
+				"weed",
+				"weekday_index"
+			],
+			[
+				"fetch_a",
+				"fetch_all"
+			],
+			[
+				"couple",
+				"couple_list"
+			],
+			[
+				"array_k",
+				"array_keys"
+			],
+			[
+				"week",
+				"weekday_index"
+			],
+			[
+				"cou",
+				"couple_weekday_list"
+			],
+			[
+				"расписа",
+				"расписания"
+			],
+			[
 				"sc",
-				"schedule"
+				"schedule_id"
+			],
+			[
+				"sche",
+				"schedule_id"
 			],
 			[
 				"сту",
@@ -32,10 +100,6 @@
 				"ret\treturn"
 			],
 			[
-				"user",
-				"user_type"
-			],
-			[
 				"em",
 				"empty"
 			],
@@ -52,16 +116,8 @@
 				"teacher"
 			],
 			[
-				"disc",
-				"discipline"
-			],
-			[
 				"disci",
 				"discipline"
-			],
-			[
-				"dis",
-				"discipline_id"
 			],
 			[
 				"дисци",
@@ -463,33 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "engine/modules/schedules/schedules.php",
-			"settings":
-			{
-				"buffer_size": 2151,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "schedules.php"
-			}
-		},
-		{
-			"file": "schedules/add.php",
-			"settings":
-			{
-				"buffer_size": 922,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "engine/modules/groups/groups.php",
-			"settings":
-			{
-				"buffer_size": 5157,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -533,64 +562,88 @@
 	"expanded_folders":
 	[
 		"/home/dmitry/Documents/Diplom/source",
+		"/home/dmitry/Documents/Diplom/source/css",
 		"/home/dmitry/Documents/Diplom/source/engine",
 		"/home/dmitry/Documents/Diplom/source/engine/modules",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/groups",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/schedules",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/users",
 		"/home/dmitry/Documents/Diplom/source/engine/templates",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/day",
 		"/home/dmitry/Documents/Diplom/source/groups",
-		"/home/dmitry/Documents/Diplom/source/schedules"
+		"/home/dmitry/Documents/Diplom/source/groups/students",
+		"/home/dmitry/Documents/Diplom/source/schedules",
+		"/home/dmitry/Documents/Diplom/source/schedules/couples",
+		"/home/dmitry/Documents/Diplom/source/schedules/couples/day"
 	],
 	"file_history":
 	[
-		"/home/dmitry/Documents/Diplom/source/schedules/index.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/day/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/day/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/edit.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/schedules/schedules.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/day/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/delete.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/schedules/delete.php",
+		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/add.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates_c/%%E8^E85^E85D971C%%edit.tpl.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/day/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/schedules/edit.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
+		"/home/dmitry/Documents/Diplom/source/schedules/index.php",
 		"/home/dmitry/Documents/Diplom/source/schedules/add.php",
-		"/home/dmitry/Documents/Diplom/source/groups/index.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/schedules/couples/index.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/add.tpl",
 		"/home/dmitry/Documents/Diplom/source/groups/add.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/add.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/config.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
+		"/home/dmitry/Documents/Diplom/source/css/template.css",
+		"/home/dmitry/Documents/Diplom/source/css/main-theme.css",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/groups/groups.php",
+		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/students/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates_c/%%0A^0AD^0ADD7820%%index.tpl.php",
+		"/home/dmitry/Documents/Diplom/source/groups/students/index.php",
+		"/home/dmitry/Documents/Diplom/source/groups/delete.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/groups/edit.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/groups/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-workspace",
 		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-project",
-		"/home/dmitry/Documents/Diplom/source/groups/edit.php",
-		"/home/dmitry/Documents/Diplom/source/groups/delete.php",
-		"/home/dmitry/Documents/Diplom/source/groups/students/index.php",
 		"/home/dmitry/Documents/Diplom/source/groups/students/add.php",
 		"/home/dmitry/Documents/Diplom/source/groups/students/delete.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/students/delete.tpl",
 		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/delete.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/delete.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/students/add.tpl",
 		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/add.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/add.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/students/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/groups/teachers/index.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/index.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/teachers/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/delete.tpl",
 		"/home/dmitry/Documents/Diplom/source/disciplines/delete.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/delete.tpl",
 		"/home/dmitry/Documents/Diplom/source/disciplines/edit.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/edit.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/edit.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/add.tpl",
 		"/home/dmitry/Documents/Diplom/source/disciplines/add.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/groups/add.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/index.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/README.md",
 		"/home/dmitry/Documents/Diplom/source/install/index.php",
 		"/home/dmitry/Documents/Diplom/source/engine/header.php",
@@ -607,9 +660,7 @@
 		"/home/dmitry/Documents/Diplom/source/users/password.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/error.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/delete.tpl",
-		"/home/dmitry/Documents/Diplom/source/css/main-theme.css",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/edit.tpl",
-		"/home/dmitry/Documents/Diplom/source/css/template.css",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/password.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/auth/form.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/header.tpl",
@@ -658,24 +709,7 @@
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/css/template.css",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/blocks/top.inc.php",
 		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/core/header.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/testimonials.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/video.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/host-europe.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/host-usa.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/host.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/wordpress.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/vps.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/security.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/ruskyconstructor.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/rubyonrails.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/prestashop.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/policies.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/opencart.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/magento.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/joomla.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/freehosting.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/domains.php",
-		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/django.php"
+		"/home/dmitry/Documents/Ruskyhost/MainSite/public_html/testimonials.php"
 	],
 	"find":
 	{
@@ -712,6 +746,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"handle_delete",
+			"couples",
+			"weekdays",
+			"<ul class=\"menu mb\">\n\t<li>",
+			"<ul class=\"menu mb\">",
+			"handle_delete_form",
+			"group",
+			"группы",
+			"function diff_fields",
+			"diff_fields",
+			"handle_edit_form",
+			"group",
 			"handle_add_form",
 			"group",
 			"discipline",
@@ -827,19 +873,7 @@
 			"?>",
 			"<?",
 			"./public_html/",
-			"./",
-			"_e",
-			", 'infotech'",
-			"_e",
-			"__",
-			"mydomain",
-			"myplugin",
-			"cena_Rapid_SSL",
-			"cena_Instant_SSL",
-			"cena_Rapid_SSL",
-			"cert",
-			"\\t+",
-			"\\s+"
+			"./"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -847,6 +881,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"schedule",
+			"расписания",
 			"schedule",
 			"group",
 			"student",
@@ -972,101 +1008,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "engine/modules/schedules/schedules.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2151,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2097,
-								2097
-							]
-						],
-						"settings":
-						{
-							"auto_name": "schedules.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1452.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "schedules/add.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 922,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": -0.0,
-						"translation.y": 198.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "engine/modules/groups/groups.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5157,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2026,
-								2026
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1751.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1087,18 +1030,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.50430292599,
 			1.0
 		],
 		"rows":

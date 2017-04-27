@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Апр 26 2017 г., 17:12
+-- Время создания: Апр 27 2017 г., 13:02
 -- Версия сервера: 5.7.17-0ubuntu0.16.04.2
 -- Версия PHP: 7.0.15-0ubuntu0.16.04.4
 
@@ -61,7 +61,7 @@ CREATE TABLE `discipline` (
 CREATE TABLE `document` (
   `id` int(10) UNSIGNED NOT NULL,
   `discipline_id` int(10) UNSIGNED NOT NULL,
-  `file_name` varchar(100) NOT NULL,
+  `url` char(32) NOT NULL,
   `name` varchar(100) NOT NULL,
   `size` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -161,6 +161,7 @@ ALTER TABLE `discipline`
 --
 ALTER TABLE `document`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `url` (`url`),
   ADD KEY `discipline_id` (`discipline_id`);
 
 --

@@ -82,6 +82,28 @@ class Users
 		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	}
 
+	function get_authors_in_document($document_id) {
+		$stmt = $this->db->prepare('SELECT user.* FROM user_document JOIN user ON user_document.user_id=user.id WHERE user_document.document_id=? ORDER BY name ASC');
+		$stmt->bind_param('i', $document_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список авторов документа.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function get_authors_not_in_document($document_id) {
+		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT user_id FROM user_document WHERE document_id=?) AND type=\'teacher\' ORDER BY name ASC');
+		$stmt->bind_param('i', $document_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список авторов не создававших документ.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
 	function get_teacher_list() {
 		$stmt = $this->db->prepare('SELECT user.* FROM user_discipline JOIN user ON user_discipline.user_id=user.id ORDER BY name ASC');
 		$stmt->bind_param('i', $discipline_id);
@@ -149,6 +171,23 @@ class Users
 
 		if (empty($result)) {
 			throw new Exception('Преподавателя не существует.');
+		}
+
+		return $result;
+	}
+
+	function get_author($id) {
+		$stmt = $this->db->prepare('SELECT * FROM user WHERE id=? AND type=\'teacher\'');
+		$stmt->bind_param('i', $id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить данные автора.');
+		}
+
+		$result = $stmt->get_result()->fetch_assoc();
+
+		if (empty($result)) {
+			throw new Exception('Автора не существует.');
 		}
 
 		return $result;

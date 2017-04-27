@@ -54,6 +54,18 @@ $config['schedules']['couples'] = array(
 );
 
 /*
+	Настройки документов
+*/
+$config['documents']['allowed_types'] = array(
+	'.pdf'  => 'application/pdf',
+	'.doc'  => 'application/msword',
+	'.docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+	'.odt'  => 'application/vnd.oasis.opendocument.text',
+	'.txt'  => 'text/plain',
+);
+$config['documents']['upload_dir'] = __DIR__.'/documents/';
+
+/*
 	Параметры шаблона
 */
 $config['template']           = array();
