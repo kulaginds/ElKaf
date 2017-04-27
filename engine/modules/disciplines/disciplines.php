@@ -101,6 +101,7 @@ class Disciplines
 		}
 
 		header('Location: /disciplines/index.php');
+		die();
 	}
 
 	function get_discipline($id) {
@@ -208,6 +209,8 @@ class Disciplines
 
 		$this->id = max((int)$_GET['id'], 0);
 
+		$this->get_discipline($this->id);
+
 		if (!array_key_exists('teacher_id', $_GET) || empty($_GET['teacher_id'])) {
 			throw new Exception('Пожалуйста, выберите преподавателя.');
 		}
@@ -215,7 +218,6 @@ class Disciplines
 		$this->teacher_id = max((int)$_GET['teacher_id'], 0);
 
 		$this->users->get_teacher($this->teacher_id);
-		$this->get_discipline($this->id);
 	}
 
 	function delete_teacher() {
