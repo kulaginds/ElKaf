@@ -7,7 +7,10 @@ ob_end_clean();
 
 // подключаю текст контента в шаблон
 $smarty->assign('content', $content);
-// рендерю и отображаю страницу
-$smarty->display('basic.tpl');
+
+if (!isset($no_display) || !$no_display) {
+	// рендерю и отображаю страницу
+	$smarty->display('basic.tpl');
+}
 
 ?>

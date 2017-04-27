@@ -43,6 +43,7 @@ try {
 	}
 } catch (Exception $e) {
 	$smarty->assign('error', $e->getMessage());
+	$no_display = false;
 }
 
 $config['template']['menu'] = $menu;
@@ -58,8 +59,12 @@ if (isset($access) && !empty($access)) {
 	try {
 		$auth->protect_page($access);
 	} catch (Exception $e) {
-		$smarty->assign('error', $e->getMessage());
+		// чищу буфер
+		ob_end_clean();
 
+		$no_display = false;
+
+		$smarty->assign('error', $e->getMessage());
 		$smarty->display('error.tpl');
 
 		include(__DIR__.'/../engine/footer.php');
