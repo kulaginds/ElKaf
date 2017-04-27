@@ -7,7 +7,7 @@
 		<a href="/disciplines/index.php">Список дисциплин</a>
 	</li>
 	<li>
-		<a href="/disciplines/teachers/add.php?id={$discipline.id}">Добавить преподаватей в дисциплину</a>
+		<a href="/disciplines/teachers/add.php?id={$discipline.id}">Добавить преподаватей к дисциплине</a>
 	</li>
 </ul>
 <table class="table">
