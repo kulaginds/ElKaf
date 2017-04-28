@@ -74,11 +74,16 @@ class Auth
 	function try_login() {
 		$name          = $this->name;
 		$password_hash = md5($this->auth_salt.$this->password);
-		$stmt          = $this->db->prepare('SELECT * FROM user WHERE name=?');
+		
+		try {
+			$stmt = $this->db->prepare('SELECT * FROM user WHERE name=?');
 
-		$stmt->bind_param('s', $name);
+			$stmt->bind_param('s', $name);
 
-		if (!$stmt->execute()) {
+			if (!$stmt->execute()) {
+				throw new Exception('Не удалось войти.');
+			}
+		} catch (mysqli_sql_exception $e) {
 			throw new Exception('Не удалось войти.');
 		}
 
