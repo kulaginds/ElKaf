@@ -59,7 +59,13 @@ function step3() {
 	}
 }
 
+function greeting_step() {
+	echo '<h1>Установка программной системы</h1>';
+	echo '<p>Для запуска установки нажмите <a href="/install/index.php?step=1">пуск</a>.</p>';
+}
+
 function error_step() {
+	echo '<h1>Ошибка</h1>';
 	echo '<p class="error">Неизвестный шаг.</p>';
 }
 
@@ -80,7 +86,7 @@ if (array_key_exists('step', $_GET) && !empty($_GET['step'])) {
 			break;
 	}
 } else {
-	step1();
+	greeting_step();
 }
 
 include(__DIR__.'/../engine/footer.php');
