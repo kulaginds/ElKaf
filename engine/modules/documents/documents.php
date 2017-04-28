@@ -22,6 +22,10 @@ class Documents
 		$this->disciplines   = $disciplines;
 		$this->allowed_types = $allowed_types;
 		$this->upload_dir    = $upload_dir;
+
+		if (!is_dir($this->upload_dir)) {
+			mkdir($this->upload_dir);
+		}
 	}
 
 	function handle_actions() {
