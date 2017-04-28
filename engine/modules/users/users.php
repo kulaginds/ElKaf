@@ -245,7 +245,7 @@ class Users
 			throw new Exception('Не удалось установить новый пароль.');
 		}
 
-		header('Location: /users/index.php');
+		header('Location: /administration/users/index.php');
 		die();
 	}
 
@@ -290,7 +290,7 @@ class Users
 			throw new Exception('Не удалось сохранить данные.');
 		}
 
-		header('Location: /users/index.php');
+		header('Location: /administration/users/index.php');
 		die();
 	}
 
@@ -309,7 +309,7 @@ class Users
 			throw new Exception('Не удалось удалить пользователя.');
 		}
 
-		header('Location: /users/index.php');
+		header('Location: /administration/users/index.php');
 		die();
 	}
 
@@ -333,7 +333,7 @@ class Users
 			throw new Exception('Не удалось добавить нового пользователя.');
 		}
 
-		header('Location: /users/index.php');
+		header('Location: /administration/users/index.php');
 		die();
 	}
 }

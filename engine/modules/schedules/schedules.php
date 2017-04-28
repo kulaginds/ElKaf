@@ -104,7 +104,7 @@ class Schedules
 			throw new Exception('Не удалось добавить новое расписание.');
 		}
 
-		header('Location: /schedules/index.php');
+		header('Location: /administration/schedules/index.php');
 	}
 
 	function get_schedule($id) {
@@ -161,7 +161,7 @@ class Schedules
 			throw new Exception('Не удалось сохранить данные.');
 		}
 
-		header('Location: /schedules/index.php');
+		header('Location: /administration/schedules/index.php');
 		die();
 	}
 
@@ -180,7 +180,7 @@ class Schedules
 			throw new Exception('Не удалось удалить расписание.');
 		}
 
-		header('Location: /schedules/index.php');
+		header('Location: /administration/schedules/index.php');
 		die();
 	}
 
@@ -290,7 +290,7 @@ class Schedules
 			throw new Exception('Не удалось добавить пару в расписание.');
 		}
 
-		header('Location: /schedules/couples/day/index.php?id='.$id.'&week='.$week.'&weekday_index='.$weekday_index);
+		header('Location: /administration/schedules/couples/day/index.php?id='.$id.'&week='.$week.'&weekday_index='.$weekday_index);
 		die();
 	}
 
@@ -314,7 +314,7 @@ class Schedules
 			throw new Exception('Не удалось сохранить данные.');
 		}
 
-		header('Location: /schedules/couples/day/index.php?id='.$couple['schedule_id'].'&week='.$couple['week'].'&weekday_index='.$couple['weekday_index']);
+		header('Location: /administration/schedules/couples/day/index.php?id='.$couple['schedule_id'].'&week='.$couple['week'].'&weekday_index='.$couple['weekday_index']);
 		die();
 	}
 
@@ -333,7 +333,7 @@ class Schedules
 			throw new Exception('Не удалось удалить пару в расписании.');
 		}
 
-		header('Location: /schedules/couples/day/index.php?id='.$couple['schedule_id'].'&week='.$couple['week'].'&weekday_index='.$couple['weekday_index']);
+		header('Location: /administration/schedules/couples/day/index.php?id='.$couple['schedule_id'].'&week='.$couple['week'].'&weekday_index='.$couple['weekday_index']);
 		die();
 	}
 }

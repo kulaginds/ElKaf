@@ -100,7 +100,7 @@ class Disciplines
 			throw new Exception('Не удалось добавить новую дисциплину.');
 		}
 
-		header('Location: /disciplines/index.php');
+		header('Location: /administration/disciplines/index.php');
 		die();
 	}
 
@@ -141,7 +141,7 @@ class Disciplines
 			throw new Exception('Не удалось сохранить данные.');
 		}
 
-		header('Location: /disciplines/index.php');
+		header('Location: /administration/disciplines/index.php');
 		die();
 	}
 
@@ -160,7 +160,7 @@ class Disciplines
 			throw new Exception('Не удалось удалить дисциплину.');
 		}
 
-		header('Location: /disciplines/index.php');
+		header('Location: /administration/disciplines/index.php');
 		die();
 	}
 
@@ -193,7 +193,7 @@ class Disciplines
 			}
 		}
 
-		header('Location: /disciplines/teachers/index.php?id='.$discipline_id);
+		header('Location: /administration/disciplines/teachers/index.php?id='.$discipline_id);
 		die();
 	}
 
@@ -228,7 +228,7 @@ class Disciplines
 			throw new Exception('Не удалось удалить преподавателя из дисциплины.');
 		}
 
-		header('Location: /disciplines/teachers/index.php?id='.$this->id);
+		header('Location: /administration/disciplines/teachers/index.php?id='.$this->id);
 		die();
 	}
 }

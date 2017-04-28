@@ -82,7 +82,7 @@ class Groups
 			throw new Exception('Не удалось добавить новую группу.');
 		}
 
-		header('Location: /groups/index.php');
+		header('Location: /administration/groups/index.php');
 	}
 
 	function get_group($id) {
@@ -122,7 +122,7 @@ class Groups
 			throw new Exception('Не удалось сохранить данные.');
 		}
 
-		header('Location: /groups/index.php');
+		header('Location: /administration/groups/index.php');
 		die();
 	}
 
@@ -141,7 +141,7 @@ class Groups
 			throw new Exception('Не удалось удалить группу.');
 		}
 
-		header('Location: /groups/index.php');
+		header('Location: /administration/groups/index.php');
 		die();
 	}
 
@@ -174,7 +174,7 @@ class Groups
 			}
 		}
 
-		header('Location: /groups/students/index.php?id='.$group_id);
+		header('Location: /administration/groups/students/index.php?id='.$group_id);
 		die();
 	}
 
@@ -208,7 +208,7 @@ class Groups
 			throw new Exception('Не удалось удалить студента из группы.');
 		}
 
-		header('Location: /groups/students/index.php?id='.$this->id);
+		header('Location: /administration/groups/students/index.php?id='.$this->id);
 		die();
 	}
 }

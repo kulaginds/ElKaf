@@ -114,7 +114,7 @@ class Documents
 			throw new Exception('Не удалось загрузить документ.');
 		}
 
-		header('Location: /documents/index.php');
+		header('Location: /administration/documents/index.php');
 		die();
 	}
 
@@ -191,7 +191,7 @@ class Documents
 			throw new Exception('Не удалось сохранить данные.');
 		}
 
-		header('Location: /documents/index.php');
+		header('Location: /administration/documents/index.php');
 		die();
 	}
 
@@ -212,7 +212,7 @@ class Documents
 
 		$this->delete_file($document['url']);
 
-		header('Location: /documents/index.php');
+		header('Location: /administration/documents/index.php');
 		die();
 	}
 
@@ -245,7 +245,7 @@ class Documents
 			}
 		}
 
-		header('Location: /documents/authors/index.php?id='.$document_id);
+		header('Location: /administration/documents/authors/index.php?id='.$document_id);
 		die();
 	}
 
@@ -280,7 +280,7 @@ class Documents
 			throw new Exception('Не удалось удалить автора из документа.');
 		}
 
-		header('Location: /documents/authors/index.php?id='.$this->id);
+		header('Location: /administration/documents/authors/index.php?id='.$this->id);
 		die();
 	}
 }

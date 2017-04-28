@@ -82,24 +82,25 @@ $config['template']['menu']   = array(
 		),
 	),
 	'administrator' => array(
+		// /administration/*
 		array(
-			'href'  => '/users/index.php',
+			'href'  => '/administration/users/index.php',
 			'title' => 'Пользователи',
 		),
 		array(
-			'href'  => '/disciplines/index.php',
+			'href'  => '/administration/disciplines/index.php',
 			'title' => 'Дисциплины',
 		),
 		array(
-			'href'  => '/groups/index.php',
+			'href'  => '/administration/groups/index.php',
 			'title' => 'Группы',
 		),
 		array(
-			'href'  => '/schedules/index.php',
+			'href'  => '/administration/schedules/index.php',
 			'title' => 'Расписания',
 		),
 		array(
-			'href'  => '/documents/index.php',
+			'href'  => '/administration/documents/index.php',
 			'title' => 'Документы',
 		),
 		array(
@@ -108,12 +109,14 @@ $config['template']['menu']   = array(
 		),
 	),
 	'teacher' => array(
+		// /teaching/*
 		array(
 			'href'  => '/index.php?action=logout',
 			'title' => 'Выйти',
 		),
 	),
 	'student' => array(
+		// /dormitory/*
 		array(
 			'href'  => '/index.php?action=logout',
 			'title' => 'Выйти',
