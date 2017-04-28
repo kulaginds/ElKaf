@@ -561,15 +561,13 @@
 	},
 	"expanded_folders":
 	[
-		"/home/dmitry/Documents/Diplom/source",
-		"/home/dmitry/Documents/Diplom/source/administration",
-		"/home/dmitry/Documents/Diplom/source/administration/users",
-		"/home/dmitry/Documents/Diplom/source/engine",
-		"/home/dmitry/Documents/Diplom/source/engine/templates",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages"
+		"/home/dmitry/Documents/Diplom/source"
 	],
 	"file_history":
 	[
+		"/home/dmitry/Documents/Diplom/source/engine/header.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/documents/documents.php",
+		"/tmp/fz3temp-1/config.php",
 		"/tmp/fz3temp-1/wp-config.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/add.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/delete.php",
@@ -609,7 +607,6 @@
 		"/home/dmitry/Documents/Diplom/source/administration/users/password.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/auth/auth.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/documents/documents.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/groups/groups.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/schedules/schedules.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
@@ -664,7 +661,6 @@
 		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/index.php",
 		"/home/dmitry/Documents/Diplom/source/disciplines/delete.php",
 		"/home/dmitry/Documents/Diplom/source/disciplines/edit.php",
-		"/home/dmitry/Documents/Diplom/source/engine/header.php",
 		"/home/dmitry/Documents/Diplom/source/engine/footer.php",
 		"/home/dmitry/Documents/Diplom/source/download.php",
 		"/home/dmitry/Downloads/download.php",
@@ -696,8 +692,7 @@
 		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-project",
 		"/home/dmitry/Documents/Diplom/source/groups/students/add.php",
 		"/home/dmitry/Documents/Diplom/source/groups/students/delete.php",
-		"/home/dmitry/Documents/Diplom/source/groups/teachers/index.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/groups/teachers/index.tpl"
+		"/home/dmitry/Documents/Diplom/source/groups/teachers/index.php"
 	],
 	"find":
 	{

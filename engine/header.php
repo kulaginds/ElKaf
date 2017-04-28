@@ -5,7 +5,7 @@ require_once(__DIR__.'/modules/smarty/Smarty.class.php');
 require_once(__DIR__.'/modules/auth/auth.php');
 
 // инициализирую подключение к БД
-mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_STRICT);
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 $db = null;
 
