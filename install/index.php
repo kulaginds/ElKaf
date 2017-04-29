@@ -16,11 +16,14 @@ function step1() {
 
 	$sql = file_get_contents($sql);
 
-	if ($db->multi_query($sql)) {
-		echo '<p>Создание структуры завершено. Перейти ко <a href="/install/index.php?step=2">второму шагу</a>.</p>';
-	} else {
-		echo '<p class="error">Не удалось создать структуру БД.</p>';
-	}
+	try {
+		if ($db->multi_query($sql)) {
+			echo '<p>Создание структуры завершено. Перейти ко <a href="/install/index.php?step=2">второму шагу</a>.</p>';
+			return;
+		}
+	} catch (mysqli_sql_exception $e) {}
+
+	echo '<p class="error">Не удалось создать структуру БД.</p>';
 }
 
 function step2() {
@@ -48,15 +51,18 @@ function step3() {
 	$password      = trim(htmlspecialchars($_POST['password']));
 	$password_hash = md5($config['security']['auth_salt'].$password);
 
-	$stmt = $db->prepare('INSERT INTO user(name, password_hash, type) VALUES(?, ?, \'administrator\')');
-	$stmt->bind_param('ss', $name, $password_hash);
+	try {
+		$stmt = $db->prepare('INSERT INTO user(name, password_hash, type) VALUES(?, ?, \'administrator\')');
+		$stmt->bind_param('ss', $name, $password_hash);
 
-	if ($stmt->execute()) {
-		echo '<p>Установка успешно завершена!</p>';
-		echo '<p><b>Пожалуйста</b>, удалите папку <i>/install/</i>.</p>';
-	} else {
-		echo '<p class="error">Не удалось добавить администратора.</p>';
-	}
+		if ($stmt->execute()) {
+			echo '<p>Установка успешно завершена!</p>';
+			echo '<p><b>Пожалуйста</b>, удалите папку <i>/install/</i>.</p>';
+			return;
+		}
+	} catch (mysqli_sql_exception $e) {}
+
+	echo '<p class="error">Не удалось добавить администратора.</p>';
 }
 
 function greeting_step() {

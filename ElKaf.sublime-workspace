@@ -565,6 +565,7 @@
 	],
 	"file_history":
 	[
+		"/home/dmitry/Documents/Diplom/source/install/index.php",
 		"/home/dmitry/Documents/Diplom/source/.gitignore",
 		"/tmp/fz3temp-1/config.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/documents/documents.php",
@@ -691,8 +692,7 @@
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/day/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/couples/index.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/add.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/delete.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/edit.tpl"
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/delete.tpl"
 	],
 	"find":
 	{
