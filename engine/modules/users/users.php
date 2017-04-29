@@ -105,14 +105,15 @@ class Users
 	}
 
 	function get_teacher_list() {
-		$stmt = $this->db->prepare('SELECT user.* FROM user_discipline JOIN user ON user_discipline.user_id=user.id ORDER BY name ASC');
-		$stmt->bind_param('i', $discipline_id);
+		$result = null;
 
-		if (!$stmt->execute()) {
+		try {
+			$result = $this->db->query('SELECT user.* FROM user_discipline JOIN user ON user_discipline.user_id=user.id ORDER BY name ASC');
+		} catch (mysqli_sql_exception $e) {
 			throw new Exception('Не удалось получить список преподавателей.');
 		}
 
-		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+		return $result->fetch_all(MYSQLI_ASSOC);
 	}
 
 	function get_students_in_group($group_id) {
