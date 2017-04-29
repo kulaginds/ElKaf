@@ -27,6 +27,15 @@ $config['user_types'] = array(
 );
 
 /*
+	Разделы пользователей
+*/
+$config['user_sections'] = array(
+	'administrator' => '/administration/index.php',
+	'teacher'       => '/teaching/index.php',
+	'student'       => '/dormitory/index.php',
+);
+
+/*
 	Настройки расписаний
 */
 $config['schedules'] = array();
@@ -111,12 +120,36 @@ $config['template']['menu']   = array(
 	'teacher' => array(
 		// /teaching/*
 		array(
+			'href'  => '/teaching/schedule/index.php',
+			'title' => 'Моё расписание',
+		),
+		array(
+			'href'  => '/teaching/disciplines/index.php',
+			'title' => 'Мои дисциплины',
+		),
+		array(
+			'href'  => '/teaching/documents/index.php',
+			'title' => 'Мои Документы',
+		),
+		array(
 			'href'  => '/index.php?action=logout',
 			'title' => 'Выйти',
 		),
 	),
 	'student' => array(
 		// /dormitory/*
+		array(
+			'href'  => '/dormitory/schedule/index.php',
+			'title' => 'Моё расписание',
+		),
+		array(
+			'href'  => '/dormitory/teachers/index.php',
+			'title' => 'Преподаватели кафедры',
+		),
+		array(
+			'href'  => '/dormitory/disciplines/index.php',
+			'title' => 'Дисциплины кафедры',
+		),
 		array(
 			'href'  => '/index.php?action=logout',
 			'title' => 'Выйти',
