@@ -97,11 +97,19 @@ class Schedules
 	}
 
 	function add() {
-		$stmt = $this->db->prepare('INSERT INTO schedule(name, group_id) VALUES(?, ?)');
-		$stmt->bind_param('si', $this->name, $this->group);
+		try {
+			$stmt = $this->db->prepare('INSERT INTO schedule(name, group_id) VALUES(?, ?)');
+			$stmt->bind_param('si', $this->name, $this->group);
 
-		if (!$stmt->execute()) {
-			throw new Exception('Не удалось добавить новое расписание.');
+			if (!$stmt->execute()) {
+				throw new Exception('Не удалось добавить новое расписание.');
+			}
+		} catch (mysqli_sql_exception $e) {
+			if (false !== strpos($e->getMessage(), 'Duplicate entry')) {
+				throw new Exception('Для одной группы можно добавить не более 1 расписания.');
+			} else {
+				throw new Exception('Не удалось добавить новое расписание.');
+			}
 		}
 
 		header('Location: /administration/schedules/index.php');
