@@ -332,11 +332,19 @@ class Schedules
 		$weekday_index = max((int)$_GET['weekday_index'], 0);
 		$couple_index  = max((int)$_GET['couple_index'], 0);
 
-		$stmt = $this->db->prepare('INSERT INTO couple(discipline_id, user_id, schedule_id, auditory, week, weekday_index, couple_index) VALUES(?, ?, ?, ?, ?, ?, ?)');
-		$stmt->bind_param('iiissii', $this->discipline, $this->teacher, $id, $this->auditory, $week, $weekday_index, $couple_index);
+		try {
+			$stmt = $this->db->prepare('INSERT INTO couple(discipline_id, user_id, schedule_id, auditory, week, weekday_index, couple_index) VALUES(?, ?, ?, ?, ?, ?, ?)');
+			$stmt->bind_param('iiissii', $this->discipline, $this->teacher, $id, $this->auditory, $week, $weekday_index, $couple_index);
 
-		if (!$stmt->execute()) {
-			throw new Exception('Не удалось добавить пару в расписание.');
+			if (!$stmt->execute()) {
+				throw new Exception('Не удалось добавить пару в расписание.');
+			}
+		} catch (mysqli_sql_exception $e) {
+			if (false !== strpos($e->getMessage(), 'Duplicate entry')) {
+				throw new Exception('Не удалось добавить пару: аудитория занята.');
+			} else {
+				throw new Exception('Не удалось добавить пару в расписание.');
+			}
 		}
 
 		header('Location: /administration/schedules/couples/day/index.php?id='.$id.'&week='.$week.'&weekday_index='.$weekday_index);
