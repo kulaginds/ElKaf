@@ -111,7 +111,7 @@ class Documents
 
 		$this->set_teacher_document_list_count($discipline_id);
 
-		$stmt       = $this->db->prepare('SELECT document.*, user.name AS author, user.id AS author_id FROM ((user_document JOIN document ON document.id=user_document.document_id) JOIN discipline ON discipline.id=document.discipline_id) JOIN user ON user.id=user_document.user_id WHERE document.discipline_id = ? ORDER BY name ASC LIMIT ?, ?');
+		$stmt       = $this->db->prepare('SELECT document.* FROM document JOIN discipline ON discipline.id=document.discipline_id WHERE document.discipline_id = ? ORDER BY name ASC LIMIT ?, ?');
 
 		$stmt->bind_param('iii', $discipline_id, $offset, $this->document_list_limit);
 
@@ -123,7 +123,7 @@ class Documents
 	}
 
 	function set_discipline_document_list_count($discipline_id) {
-		$stmt = $this->db->prepare('SELECT COUNT(*) FROM ((user_document JOIN document ON document.id=user_document.document_id) JOIN discipline ON discipline.id=document.discipline_id) JOIN user ON user.id=user_document.user_id WHERE document.discipline_id = ?');
+		$stmt = $this->db->prepare('SELECT COUNT(*) FROM document JOIN discipline ON discipline.id=document.discipline_id WHERE document.discipline_id = ?');
 		$stmt->bind_param('i', $discipline_id);
 
 		if (!$stmt->execute()) {
