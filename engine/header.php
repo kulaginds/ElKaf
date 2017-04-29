@@ -39,7 +39,7 @@ try {
 	$auth->handle_actions();
 	
 	if ($auth->is_auth()) {
-		$menu = $config['template']['menu'][$auth->get_user()['type']]
+		$menu = $config['template']['menu'][$auth->get_user()['type']];
 	}
 } catch (Exception $e) {
 	$smarty->assign('error', $e->getMessage());
