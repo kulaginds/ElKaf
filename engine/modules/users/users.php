@@ -127,7 +127,7 @@ class Users
 	}
 
 	function get_students_not_in_group($group_id) {
-		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT DISTINCT user_id FROM user_group) AND type=\'student\' ORDER BY name ASC');
+		$stmt = $this->db->prepare('SELECT * FROM user WHERE id NOT IN (SELECT DISTINCT user_id FROM user_group WHERE group_id=?) AND type=\'student\' ORDER BY name ASC');
 		$stmt->bind_param('i', $group_id);
 
 		if (!$stmt->execute()) {
