@@ -68,7 +68,9 @@ $config['schedules']['couples'] = array(
 $config['documents']['allowed_types'] = array(
 	'.pdf'  => 'application/pdf',
 	'.doc'  => 'application/msword',
+	'.ppt'  => 'application/vnd.ms-powerpoint',
 	'.docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+	'.pptx' => 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 	'.odt'  => 'application/vnd.oasis.opendocument.text',
 	'.txt'  => 'text/plain',
 );
