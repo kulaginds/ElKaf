@@ -91,7 +91,10 @@ $config['template']['menu']   = array(
 		),
 	),
 	'administrator' => array(
-		// /administration/*
+		array(
+			'href'  => '/administration/index.php',
+			'title' => 'Главная',
+		),
 		array(
 			'href'  => '/administration/users/index.php',
 			'title' => 'Пользователи',
@@ -118,7 +121,10 @@ $config['template']['menu']   = array(
 		),
 	),
 	'teacher' => array(
-		// /teaching/*
+		array(
+			'href'  => '/teaching/index.php',
+			'title' => 'Главная',
+		),
 		array(
 			'href'  => '/teaching/schedule/index.php',
 			'title' => 'Моё расписание',
@@ -137,7 +143,10 @@ $config['template']['menu']   = array(
 		),
 	),
 	'student' => array(
-		// /dormitory/*
+		array(
+			'href'  => '/dormitory/index.php',
+			'title' => 'Главная',
+		),
 		array(
 			'href'  => '/dormitory/schedule/index.php',
 			'title' => 'Моё расписание',
