@@ -4,16 +4,40 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"teacher_id"
+			],
+			[
+				"document",
+				"document_id"
+			],
+			[
+				"docu",
+				"document_id"
+			],
+			[
+				"disc",
+				"discipline"
+			],
+			[
+				"дис",
+				"дисциплин"
+			],
+			[
+				"admi",
+				"administration"
+			],
+			[
+				"докуме",
+				"Документы"
+			],
+			[
 				"discip",
 				"discipline_id"
 			],
 			[
 				"uplo",
 				"upload_dir"
-			],
-			[
-				"docu",
-				"document"
 			],
 			[
 				"up",
@@ -54,10 +78,6 @@
 			[
 				"user",
 				"user_id"
-			],
-			[
-				"disc",
-				"disciplines"
 			],
 			[
 				"wee",
@@ -494,26 +514,6 @@
 			[
 				"permi",
 				"permission"
-			],
-			[
-				"q",
-				"query"
-			],
-			[
-				"arra",
-				"array"
-			],
-			[
-				"array_ke",
-				"array_key_exists"
-			],
-			[
-				"inli",
-				"inline-block"
-			],
-			[
-				"bloc",
-				"block"
 			]
 		]
 	},
@@ -565,29 +565,85 @@
 	],
 	"file_history":
 	[
+		"/home/dmitry/Documents/Diplom/source/engine/modules/schedules/schedules.php",
+		"/home/dmitry/Documents/Diplom/source/dormitory/disciplines/info.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/dormitory/disciplines/info.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/config.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
+		"/home/dmitry/Documents/Diplom/source/engine/modules/documents/documents.php",
+		"/home/dmitry/Documents/Diplom/source/dormitory/teachers/info.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/dormitory/teachers/info.tpl",
+		"/home/dmitry/Documents/Diplom/source/dormitory/disciplines/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/dormitory/disciplines/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/disciplines/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/administration/disciplines/index.php",
+		"/home/dmitry/Documents/Diplom/source/dormitory/teachers/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/dormitory/teachers/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/disciplines/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/dormitory/documents/download.php",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/download.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/documents/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/edit.php",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/index.php",
+		"/home/dmitry/Documents/Diplom/source/administration/users/index.php",
+		"/home/dmitry/Documents/Diplom/source/dormitory/index.php",
+		"/home/dmitry/Documents/Diplom/source/dormitory/schedule/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/dormitory/schedule/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/schedules/couples/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/teaching/schedule/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/schedule/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/dormitory/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/teaching/index.php",
+		"/home/dmitry/Documents/Diplom/source/teaching/documents/edit.php",
+		"/home/dmitry/Documents/Diplom/source/teaching/documents/delete.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/documents/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/delete.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/documents/delete.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/documents/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/documents/edit.tpl",
+		"/home/dmitry/Documents/Diplom/source/teaching/documents/download.php",
+		"/home/dmitry/Downloads/Vim_notes.txt",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/documents/download.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/documents/download.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/documents/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/authors/index.php",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/authors/delete.php",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/authors/add.php",
+		"/home/dmitry/Documents/Diplom/source/administration/documents/add.php",
+		"/home/dmitry/Documents/Diplom/source/teaching/documents/add.php",
+		"/home/dmitry/Documents/Diplom/source/teaching/documents/discipline.php",
+		"/home/dmitry/Documents/Diplom/source/teaching/documents/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/documents/add.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/documents/discipline.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/documents/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/teaching/disciplines/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/teaching/disciplines/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/header.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/auth/auth.php",
+		"/home/dmitry/Documents/Diplom/source/administration/schedules/couples/index.php",
+		"/home/dmitry/Documents/Diplom/source/administration/schedules/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/schedules/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/administration/index.php",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/administration/index.tpl",
+		"/home/dmitry/Documents/Diplom/source/engine/templates/auth/form.tpl",
+		"/home/dmitry/Documents/Diplom/phpMyAdmin-4.7.0-all-languages/config.inc.php",
+		"/tmp/fz3temp-1/robots.txt",
+		"/tmp/fz3temp-1/error_log",
+		"/home/dmitry/Documents/Diplom/source/robots.txt",
 		"/tmp/fz3temp-1/auth.php",
 		"/tmp/fz3temp-1/users.php",
-		"/tmp/fz3temp-1/error_log",
-		"/home/dmitry/Documents/Diplom/source/engine/header.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/documents/documents.php",
 		"/tmp/fz3temp-1/config.php",
 		"/tmp/fz3temp-1/wp-config.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/add.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/delete.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/edit.php",
-		"/home/dmitry/Documents/Diplom/source/administration/disciplines/index.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/teachers/add.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/teachers/delete.php",
 		"/home/dmitry/Documents/Diplom/source/administration/disciplines/teachers/index.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/add.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/authors/add.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/authors/delete.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/authors/index.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/delete.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/download.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/edit.php",
-		"/home/dmitry/Documents/Diplom/source/administration/documents/index.php",
 		"/home/dmitry/Documents/Diplom/source/administration/groups/add.php",
 		"/home/dmitry/Documents/Diplom/source/administration/groups/delete.php",
 		"/home/dmitry/Documents/Diplom/source/administration/groups/edit.php",
@@ -600,19 +656,13 @@
 		"/home/dmitry/Documents/Diplom/source/administration/schedules/couples/day/delete.php",
 		"/home/dmitry/Documents/Diplom/source/administration/schedules/couples/day/edit.php",
 		"/home/dmitry/Documents/Diplom/source/administration/schedules/couples/day/index.php",
-		"/home/dmitry/Documents/Diplom/source/administration/schedules/couples/index.php",
 		"/home/dmitry/Documents/Diplom/source/administration/schedules/delete.php",
 		"/home/dmitry/Documents/Diplom/source/administration/schedules/edit.php",
-		"/home/dmitry/Documents/Diplom/source/administration/schedules/index.php",
 		"/home/dmitry/Documents/Diplom/source/administration/users/add.php",
 		"/home/dmitry/Documents/Diplom/source/administration/users/delete.php",
 		"/home/dmitry/Documents/Diplom/source/administration/users/edit.php",
-		"/home/dmitry/Documents/Diplom/source/administration/users/index.php",
 		"/home/dmitry/Documents/Diplom/source/administration/users/password.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/disciplines/disciplines.php",
 		"/home/dmitry/Documents/Diplom/source/engine/modules/groups/groups.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/schedules/schedules.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/users/users.php",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/add.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/delete.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/disciplines/teachers/index.tpl",
@@ -642,67 +692,18 @@
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/add.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/delete.tpl",
 		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/edit.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/add.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/delete.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/edit.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/password.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/users/index.tpl",
-		"/home/dmitry/Documents/Diplom/source/engine/config.php",
-		"/home/dmitry/Documents/Diplom/source/index.php",
-		"/home/dmitry/Documents/Diplom/source/install/index.php",
-		"/home/dmitry/Documents/Diplom/source/documents/edit.php",
-		"/home/dmitry/Documents/Diplom/source/documents/download.php",
-		"/home/dmitry/Documents/Diplom/source/documents/delete.php",
-		"/home/dmitry/Documents/Diplom/source/documents/add.php",
-		"/home/dmitry/Documents/Diplom/source/documents/authors/index.php",
-		"/home/dmitry/Documents/Diplom/source/documents/authors/delete.php",
-		"/home/dmitry/Documents/Diplom/source/documents/authors/add.php",
-		"/home/dmitry/Documents/Diplom/source/documents/index.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/delete.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/add.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/teachers/index.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/delete.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/edit.php",
-		"/home/dmitry/Documents/Diplom/source/engine/footer.php",
-		"/home/dmitry/Documents/Diplom/source/download.php",
-		"/home/dmitry/Downloads/download.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/documents/download.tpl",
-		"/home/dmitry/Documents/Diplom/source/document.php",
-		"/home/dmitry/Documents/Diplom/source/engine/modules/smarty/plugins/modifier.filesize.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/add.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/index.php",
-		"/home/dmitry/Documents/Diplom/source/disciplines/add.php",
-		"/home/dmitry/Documents/Diplom/database/elkaf.sql",
-		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/edit.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/delete.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/delete.php",
-		"/home/dmitry/Documents/Diplom/source/engine/templates_c/%%E8^E85^E85D971C%%edit.tpl.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/edit.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/couples/day/index.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/index.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/add.php",
-		"/home/dmitry/Documents/Diplom/source/schedules/couples/index.php",
-		"/home/dmitry/Documents/Diplom/source/groups/add.php",
-		"/home/dmitry/Documents/Diplom/source/css/template.css",
-		"/home/dmitry/Documents/Diplom/source/css/main-theme.css",
-		"/home/dmitry/Documents/Diplom/source/engine/templates_c/%%0A^0AD^0ADD7820%%index.tpl.php",
-		"/home/dmitry/Documents/Diplom/source/groups/students/index.php",
-		"/home/dmitry/Documents/Diplom/source/groups/delete.php",
-		"/home/dmitry/Documents/Diplom/source/groups/edit.php",
-		"/home/dmitry/Documents/Diplom/source/groups/index.php",
-		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-workspace",
-		"/home/dmitry/Documents/Diplom/source/ElKaf.sublime-project"
+		"/home/dmitry/Documents/Diplom/source/engine/templates/pages/schedules/index.tpl"
 	],
 	"find":
 	{
-		"height": 170.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 102.0,
 		"where_history":
 		[
+			"/home/dmitry/Documents/Diplom/source",
 			"/home/dmitry/Documents/Diplom/source/administration",
 			"/home/dmitry/Documents/Diplom/source/administration/users",
 			"",
@@ -731,6 +732,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"handle_delete_form",
+			"new Documents($db, $users",
+			"add",
+			"handle_add_form",
+			"document_list_limit",
+			"set_document_list_count",
+			"FROM user_discipline JOIN discipline ON discipline.id=user_discipline.discipline",
+			"get_couple_weekday_list",
+			"assign",
 			"handle_auth_form",
 			"display('pages/",
 			"__DIR__.'/../",
@@ -849,16 +859,7 @@
 			"testimonials",
 			"license",
 			"terms",
-			"partners",
-			"documents",
-			"policies",
-			"contacts",
-			"map",
-			"aboutus",
-			"video",
-			"autoinstaller",
-			"pay",
-			"security"
+			"partners"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -866,6 +867,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"new Documents($db, $auth, $users",
 			"display('pages/administration/",
 			"__DIR__.'/../../",
 			"document",
@@ -992,8 +994,7 @@
 			"Отклонить",
 			"Одобрить",
 			"администратор",
-			"модератор",
-			"блокирован"
+			"модератор"
 		],
 		"reverse": false,
 		"show_context": true,

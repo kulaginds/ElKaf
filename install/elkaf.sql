@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Апр 27 2017 г., 13:02
--- Версия сервера: 5.7.17-0ubuntu0.16.04.2
+-- Время создания: Апр 29 2017 г., 17:16
+-- Версия сервера: 5.7.18-0ubuntu0.16.04.1
 -- Версия PHP: 7.0.15-0ubuntu0.16.04.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -175,7 +175,7 @@ ALTER TABLE `group`
 --
 ALTER TABLE `schedule`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `group_id` (`group_id`);
+  ADD UNIQUE KEY `group_id` (`group_id`) USING BTREE;
 
 --
 -- Индексы таблицы `user`
