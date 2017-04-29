@@ -108,7 +108,7 @@ class Users
 		$result = null;
 
 		try {
-			$result = $this->db->query('SELECT user.* FROM user_discipline JOIN user ON user_discipline.user_id=user.id ORDER BY name ASC');
+			$result = $this->db->query('SELECT * FROM user WHERE type=\'teacher\' ORDER BY name ASC');
 		} catch (mysqli_sql_exception $e) {
 			throw new Exception('Не удалось получить список преподавателей.');
 		}
