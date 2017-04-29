@@ -124,6 +124,23 @@ class Schedules
 		return $result;
 	}
 
+	function get_student_schedule($student_id) {
+		$stmt = $this->db->prepare('SELECT schedule.* FROM user_group JOIN schedule ON schedule.group_id=user_group.group_id WHERE user_group.user_id = ?');
+		$stmt->bind_param('i', $student_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить данные расписания студента.');
+		}
+
+		$result = $stmt->get_result()->fetch_assoc();
+
+		if (empty($result)) {
+			throw new Exception('Расписания не существует.');
+		}
+
+		return $result;
+	}
+
 	function get_couple($id) {
 		$stmt = $this->db->prepare('SELECT * FROM couple WHERE id=?');
 		$stmt->bind_param('i', $id);
@@ -192,7 +209,7 @@ class Schedules
 	}
 
 	function get_week_couple_list($schedule_id, $week) {
-		$stmt = $this->db->prepare('SELECT couple.*, discipline.name AS discipline, user.name AS teacher FROM (couple JOIN discipline ON discipline.id=couple.discipline_id) JOIN user ON user.id=couple.user_id WHERE schedule_id=? AND week=?');
+		$stmt = $this->db->prepare('SELECT couple.*, discipline.name AS discipline, discipline.id AS discipline_id, user.name AS teacher, user.id AS teacher_id FROM (couple JOIN discipline ON discipline.id=couple.discipline_id) JOIN user ON user.id=couple.user_id WHERE schedule_id=? AND week=?');
 		$stmt->bind_param('is', $schedule_id, $week);
 
 		if (!$stmt->execute()) {
