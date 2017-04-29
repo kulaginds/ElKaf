@@ -1,6 +1,7 @@
 <?php
 
-$access = 'administrator';
+$no_display = true;
+$access     = 'teacher';
 
 include(__DIR__.'/../../engine/header.php');
 require_once(__DIR__.'/../../engine/modules/users/users.php');
@@ -14,20 +15,13 @@ $document    = null;
 $id          = max((int)$_GET['id'], 0);
 
 try {
-	$documents->handle_actions();
+	$documents->download_file($id);
 } catch (Exception $e) {
 	$smarty->assign('error', $e->getMessage());
+	$no_display = false;
 }
 
-try {
-	$document = $documents->get_document($id);
-} catch (Exception $e) {
-	$smarty->assign('error', $e->getMessage());
-}
-
-$smarty->assign('delete_document', $document);
-
-$smarty->display('pages/administration/documents/delete.tpl');
+$smarty->display('pages/administration/documents/download.tpl');
 
 include(__DIR__.'/../../engine/footer.php');
 

@@ -65,6 +65,36 @@ class Disciplines
 		$this->discipline_list_count = $result->fetch_array()[0];
 	}
 
+	function get_teacher_discipline_list($teacher_id) {
+		$this->page = max((int)$_GET['page'], 1);
+		$offset     = ($this->page - 1) * $this->discipline_list_limit;
+
+		$this->set_teacher_discipline_list_count($teacher_id);
+
+		$stmt       = $this->db->prepare('SELECT discipline.* FROM user_discipline JOIN discipline ON discipline.id=user_discipline.discipline_id WHERE user_discipline.user_id=? ORDER BY name ASC LIMIT ?, ?');
+
+		$stmt->bind_param('iii', $teacher_id, $offset, $this->discipline_list_limit);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список дисциплин преподавателя.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function set_teacher_discipline_list_count($teacher_id) {
+		$stmt = $this->db->prepare('SELECT COUNT(*) FROM user_discipline JOIN discipline ON discipline.id=user_discipline.discipline_id WHERE user_discipline.user_id=?');
+		$stmt->bind_param('i', $teacher_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить количество дисциплин преподавателя.');
+		}
+
+		$result = $stmt->get_result();
+
+		$this->discipline_list_count = $result->fetch_array()[0];
+	}
+
 	function handle_add_form() {
 		$this->check_add_fields();
 		$this->add();

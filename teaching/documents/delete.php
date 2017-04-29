@@ -1,6 +1,6 @@
 <?php
 
-$access = 'administrator';
+$access = 'teacher';
 
 include(__DIR__.'/../../engine/header.php');
 require_once(__DIR__.'/../../engine/modules/users/users.php');
@@ -20,14 +20,14 @@ try {
 }
 
 try {
-	$document = $documents->get_document($id);
+	$document = $documents->get_teacher_document($auth->get_user()['id'], $id);
 } catch (Exception $e) {
 	$smarty->assign('error', $e->getMessage());
 }
 
 $smarty->assign('delete_document', $document);
 
-$smarty->display('pages/administration/documents/delete.tpl');
+$smarty->display('pages/teaching/documents/delete.tpl');
 
 include(__DIR__.'/../../engine/footer.php');
 

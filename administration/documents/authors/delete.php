@@ -9,7 +9,7 @@ require_once(__DIR__.'/../../../engine/modules/documents/documents.php');
 
 $users       = new Users($db, $smarty, $config['user_types'], $config['security']['auth_salt']);
 $disciplines = new Disciplines($db, $users);
-$documents   = new Documents($db, $users, $disciplines, $config['documents']['allowed_types'], $config['documents']['upload_dir']);
+$documents   = new Documents($db, $auth, $users, $disciplines, $config['documents']['allowed_types'], $config['documents']['upload_dir']);
 $document    = null;
 $author      = null;
 $id          = max((int)$_GET['id'], 0);

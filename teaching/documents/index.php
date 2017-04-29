@@ -1,6 +1,6 @@
 <?php
 
-$access = 'administrator';
+$access = 'teacher';
 
 include(__DIR__.'/../../engine/header.php');
 require_once(__DIR__.'/../../engine/modules/users/users.php');
@@ -13,7 +13,7 @@ $documents     = new Documents($db, $auth, $users, $disciplines, $config['docume
 $document_list = null;
 
 try {
-	$document_list = $documents->get_document_list();
+	$document_list = $documents->get_teacher_document_list($auth->get_user()['id']);
 } catch (Exception $e) {
 	$smarty->assign('error', $e->getMessage());
 }
@@ -23,7 +23,7 @@ $smarty->assign('page', $documents->page);
 $smarty->assign('count', $documents->document_list_count);
 $smarty->assign('limit', $documents->document_list_limit);
 
-$smarty->display('pages/administration/documents/index.tpl');
+$smarty->display('pages/teaching/documents/index.tpl');
 
 include(__DIR__.'/../../engine/footer.php');
 

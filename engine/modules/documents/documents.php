@@ -3,11 +3,13 @@
 class Documents
 {
 	protected $db               = null;
+	protected $auth             = null;
 	protected $users            = null;
 	protected $disciplines      = null;
 	protected $allowed_types    = null;
 	protected $upload_dir       = null;
 	
+	public $id                  = null;
 	public $file                = null;
 	public $discipline          = null;
 	public $authors             = null;
@@ -16,8 +18,9 @@ class Documents
 	public $document_list_limit = 20;
 	public $document_list_count = 0;
 
-	function __construct($db, $users, $disciplines, $allowed_types, $upload_dir) {
+	function __construct($db, $auth, $users, $disciplines, $allowed_types, $upload_dir) {
 		$this->db            = $db;
+		$this->auth          = $auth;
 		$this->users         = $users;
 		$this->disciplines   = $disciplines;
 		$this->allowed_types = $allowed_types;
@@ -67,6 +70,71 @@ class Documents
 		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	}
 
+	function set_document_list_count() {
+		$result                    = $this->db->query('SELECT COUNT(*) FROM document');
+		$this->document_list_count = $result->fetch_array()[0];
+	}
+
+	function get_teacher_document_list($teacher_id) {
+		$this->page = max((int)$_GET['page'], 1);
+		$offset     = ($this->page - 1) * $this->document_list_limit;
+
+		$this->set_teacher_document_list_count($teacher_id);
+
+		$stmt       = $this->db->prepare('SELECT document.*, discipline.name AS discipline FROM (user_document JOIN document ON document.id=user_document.document_id) JOIN discipline ON discipline.id=document.discipline_id WHERE user_document.user_id=? ORDER BY name ASC LIMIT ?, ?');
+
+		$stmt->bind_param('iii', $teacher_id, $offset, $this->document_list_limit);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список документов преподавателя.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function set_teacher_document_list_count($teacher_id) {
+		$stmt = $this->db->prepare('SELECT COUNT(*) FROM (user_document JOIN document ON document.id=user_document.document_id) JOIN discipline ON discipline.id=document.discipline_id WHERE user_document.user_id=?');
+		$stmt->bind_param('i', $teacher_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить количество документов преподавателя.');
+		}
+
+		$result = $stmt->get_result();
+
+		$this->document_list_count = $result->fetch_array()[0];
+	}
+
+	function get_discipline_document_list($discipline_id) {
+		$this->page = max((int)$_GET['page'], 1);
+		$offset     = ($this->page - 1) * $this->document_list_limit;
+
+		$this->set_teacher_document_list_count($discipline_id);
+
+		$stmt       = $this->db->prepare('SELECT document.*, user.name AS author, user.id AS author_id FROM ((user_document JOIN document ON document.id=user_document.document_id) JOIN discipline ON discipline.id=document.discipline_id) JOIN user ON user.id=user_document.user_id WHERE document.discipline_id = ? ORDER BY name ASC LIMIT ?, ?');
+
+		$stmt->bind_param('iii', $discipline_id, $offset, $this->document_list_limit);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список документов дисциплины.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function set_discipline_document_list_count($discipline_id) {
+		$stmt = $this->db->prepare('SELECT COUNT(*) FROM ((user_document JOIN document ON document.id=user_document.document_id) JOIN discipline ON discipline.id=document.discipline_id) JOIN user ON user.id=user_document.user_id WHERE document.discipline_id = ?');
+		$stmt->bind_param('i', $discipline_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить количество документов дисциплины.');
+		}
+
+		$result = $stmt->get_result();
+
+		$this->document_list_count = $result->fetch_array()[0];
+	}
+
 	function get_document($id) {
 		$stmt = $this->db->prepare('SELECT * FROM document WHERE id=?');
 		$stmt->bind_param('i', $id);
@@ -84,9 +152,21 @@ class Documents
 		return $result;
 	}
 
-	function set_document_list_count() {
-		$result                    = $this->db->query('SELECT COUNT(*) FROM document');
-		$this->document_list_count = $result->fetch_array()[0];
+	function get_teacher_document($teacher_id, $document_id) {
+		$stmt = $this->db->prepare('SELECT document.* FROM `user_document` JOIN document ON document.id=user_document.document_id WHERE user_document.user_id=? AND user_document.document_id=?');
+		$stmt->bind_param('ii', $teacher_id, $document_id);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить информацию о документе преподавателя.');
+		}
+
+		$result = $stmt->get_result()->fetch_assoc();
+
+		if (empty($result)) {
+			throw new Exception('Документа не существует либо вы не являетесь автором.');
+		}
+
+		return $result;
 	}
 
 	function handle_add_form() {
@@ -118,8 +198,15 @@ class Documents
 			throw new Exception('Не удалось загрузить документ.');
 		}
 
-		header('Location: /administration/documents/index.php');
-		die();
+		if ($this->auth->get_user()['type'] == 'teacher') {
+			$this->authors[] = $this->auth->get_user()['id'];
+			$this->id        = $stmt->insert_id;
+
+			$this->add_authors();
+		} else {
+			header('Location: /administration/documents/index.php');
+			die();
+		}
 	}
 
 	function upload_file() {
@@ -195,7 +282,12 @@ class Documents
 			throw new Exception('Не удалось сохранить данные.');
 		}
 
-		header('Location: /administration/documents/index.php');
+		if ($this->auth->get_user()['type'] == 'teacher') {
+			header('Location: /teaching/documents/index.php');
+		} else {
+			header('Location: /administration/documents/index.php');
+		}
+
 		die();
 	}
 
@@ -216,7 +308,12 @@ class Documents
 
 		$this->delete_file($document['url']);
 
-		header('Location: /administration/documents/index.php');
+		if ($this->auth->get_user()['type'] == 'teacher') {
+			header('Location: /teaching/documents/index.php');
+		} else {
+			header('Location: /administration/documents/index.php');
+		}
+		
 		die();
 	}
 
@@ -238,7 +335,11 @@ class Documents
 	}
 
 	function add_authors() {
-		$document_id   = max((int)$_GET['id'], 0);
+		if (!empty($this->id)) {
+			$document_id = $this->id;
+		} else {
+			$document_id = max((int)$_GET['id'], 0);
+		}
 
 		$stmt = $this->db->prepare('INSERT IGNORE INTO user_document(user_id, document_id) VALUES(?, ?)');
 		$stmt->bind_param('ii', $author_id, $document_id);
@@ -249,7 +350,12 @@ class Documents
 			}
 		}
 
-		header('Location: /administration/documents/authors/index.php?id='.$document_id);
+		if (!empty($this->id)) {
+			header('Location: /teaching/documents/index.php');
+		} else {
+			header('Location: /administration/documents/authors/index.php?id='.$document_id);
+		}
+
 		die();
 	}
 

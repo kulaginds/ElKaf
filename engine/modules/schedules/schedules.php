@@ -186,6 +186,23 @@ class Schedules
 
 	function get_couple_weekday_list($schedule_id, $week) {
 		$week_couple_list    = $this->get_week_couple_list($schedule_id, $week);
+		$couple_weekday_list = $this->transpose_list($week_couple_list);
+
+		return $couple_weekday_list;
+	}
+
+	function get_week_couple_list($schedule_id, $week) {
+		$stmt = $this->db->prepare('SELECT couple.*, discipline.name AS discipline, user.name AS teacher FROM (couple JOIN discipline ON discipline.id=couple.discipline_id) JOIN user ON user.id=couple.user_id WHERE schedule_id=? AND week=?');
+		$stmt->bind_param('is', $schedule_id, $week);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список пар у расписания.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function transpose_list($week_couple_list) {
 		$couple_weekday_list = array();
 
 		for ($i=0; $i<count($this->couples); $i++) {
@@ -206,17 +223,6 @@ class Schedules
 		}
 
 		return $couple_weekday_list;
-	}
-
-	function get_week_couple_list($schedule_id, $week) {
-		$stmt = $this->db->prepare('SELECT couple.*, discipline.name AS discipline, user.name AS teacher FROM (couple JOIN discipline ON discipline.id=couple.discipline_id) JOIN user ON user.id=couple.user_id WHERE schedule_id=? AND week=?');
-		$stmt->bind_param('is', $schedule_id, $week);
-
-		if (!$stmt->execute()) {
-			throw new Exception('Не удалось получить список пар у расписания.');
-		}
-
-		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 	}
 
 	function get_couple_list($schedule_id, $week, $weekday_index) {
@@ -242,6 +248,24 @@ class Schedules
 
 		if (!$stmt->execute()) {
 			throw new Exception('Не удалось получить список пар у дня расписания.');
+		}
+
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
+
+	function get_teacher_couple_weekday_list($teacher_id, $week) {
+		$week_couple_list    = $this->get_teacher_week_couple_list($teacher_id, $week);
+		$couple_weekday_list = $this->transpose_list($week_couple_list);
+
+		return $couple_weekday_list;
+	}
+
+	function get_teacher_week_couple_list($teacher_id, $week) {
+		$stmt = $this->db->prepare('SELECT couple.*, discipline.name AS discipline, `group`.name AS `group` FROM ((couple JOIN discipline ON discipline.id=couple.discipline_id) JOIN schedule ON schedule.id=couple.schedule_id) JOIN `group` ON `group`.id=schedule.group_id WHERE couple.user_id=? AND couple.week=?');
+		$stmt->bind_param('is', $teacher_id, $week);
+
+		if (!$stmt->execute()) {
+			throw new Exception('Не удалось получить список пар у преподавателя.');
 		}
 
 		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
