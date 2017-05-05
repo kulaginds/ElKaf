@@ -10,6 +10,20 @@ header, nav, .content, footer {
 	padding: 20px;
 }
 
+header .picture,
+header .description {
+	display: inline-block;
+	vertical-align: top;
+}
+
+header .picture {
+	margin-right: 15px;
+}
+
+header .description {
+	margin-top: 8px;
+}
+
 ul.menu {
 	padding: 0;
 	margin: 0;

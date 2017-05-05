@@ -11,8 +11,13 @@
 <body>
 	<div class="container">
 		<header>
-			<h1>{$config.header.title}</h1>
-			<p class="slogan">{$config.header.slogan}</p>
+			<div class="picture">
+				<img src="/images/univ.jpg" width="100" alt="Севастопольский государственный университет">
+			</div>
+			<div class="description">
+				<h1>{$config.header.title}</h1>
+				<p class="slogan">{$config.header.slogan}</p>
+			</div>
 		</header>
 		<nav>
 			<ul class="menu">
