@@ -1,7 +1,7 @@
 <?php
 
 require_once(__DIR__.'/config.php');
-require_once(__DIR__.'/modules/smarty/Smarty.class.php');
+require_once(__DIR__.'/modules/smarty/libs/Smarty.class.php');
 require_once(__DIR__.'/modules/auth/auth.php');
 
 // инициализирую подключение к БД
