@@ -59,9 +59,6 @@ if (isset($access) && !empty($access)) {
 	try {
 		$auth->protect_page($access);
 	} catch (Exception $e) {
-		// чищу буфер
-		ob_end_clean();
-
 		$no_display = false;
 
 		$smarty->assign('error', $e->getMessage());
