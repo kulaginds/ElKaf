@@ -1,4 +1,4 @@
 [submodule "engine/modules/smarty"]
 	path = engine/modules/smarty
-	url = git@github.com:smarty-php/smarty.git
+	url = https://github.com/smarty-php/smarty.git
 	branch = Smarty2
